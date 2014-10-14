@@ -1,4 +1,16 @@
 <!doctype html>
+<?php
+    // mysql_connect("sulley.cah.ucf.edu", "st369963", "Goknights1") or die(mysql_error());
+    // mysql_select_db("st369963") or die(mysql_error());
+    
+    // $result = mysql_query("select * from products where category = 'Beverage' limit 1 union(select * from products where category = 'Appetizer' limit 1) union(select * from products where category = 'Main Course' limit 1)")
+    // or die(mysql_error());  
+    
+    // $data = array();
+    
+    // while ($row = mysql_fetch_object($result))
+    // $data[] = $row;
+?>
 <head>
 	<meta charset="utf-8">
 	<title>Mexcellent Catalog- Stephanie Garay</title>
@@ -38,27 +50,22 @@
                         <h3 class="subheadings">BEVERAGES</h3>
                         <p class="descriptions">Choose from a diverse selection of beverages that everyone in the family can enjoy. From the fruity Jarritos sodas that's appropriate for children to a more adult Margarita or Corona for the adults. We also have a wide range of flavors to choose from so whichever one you pick, you won't be disappointed. </p> 
                         <div class="productImages" >
-                            <div class="c4">
-                                <div class="productThumb">	
-                                    <a href="#news"><img src="img/jarritos.jpg" alt="juice"></a>
-                                    <a href="jarritosProduct.php"><h3 class="productTitle">Jarrito</h3></a>
-                                    <p>$1.95</p>
+                        <?php
+                        $con=mysqli_connect("sulley.cah.ucf.edu", "st369963", "Goknights1", "st369963");
+                        $result = mysqli_query($con,"SELECT * FROM products WHERE category = 'Beverage'");
+
+                          while($row = mysqli_fetch_array($result)) {
+
+                            echo "<div class='c4'>
+                                <div class='productThumb'>  
+                                    <a href='#news'><img src="."'img/".$row['productImage']."'"." alt='juice'></a>
+                                    <a href='jarritosProduct.php'><h3 class='productTitle'>".$row['productName']."</h3></a>
+                                    <p>".$row['price']."</p>
                                 </div>
-                            </div>
-                            <div class="c4">
-                                <div class="productThumb">	
-                                    <img src="img/corona.jpeg" alt="beer">
-                                    <a href="coronaProduct.php"><h3 class="productTitle">Corona (Contains Alcohol)</h3></a>
-                                    <p>$2.49</p>
-                                </div>  
-                            </div>              
-                            <div class="c4">
-                                <div class="productThumb">
-                                    <img src="img/margarita.jpg" alt="margarita">
-                                    <a href="margaritaProduct.php"><h3 class="productTitle">Margarita (Contains Alcohol)</h3></a>
-                                    <p>$5.95</p>
-                                </div>
-                            </div>
+                            </div>";
+                          }
+
+                          ?>
                         </div>
                     </div>                
                     <div class="c6 end">
