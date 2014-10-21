@@ -59,8 +59,9 @@
                             echo "<div class='c4'>
                                 <div class='productThumb'>  
                                     <a href='#news'><img src="."'img/".$row['productImage']."'"." alt='juice'></a>
-                                    <a href='jarritosProduct.php'><h3 class='productTitle'>".$row['productName']."</h3></a>
-                                    <p>".$row['price']."</p>
+                                    <a href='#'><h3 class='productTitle'>".$row['productName']."</h3></a>
+                                    <p>".$row['price']."</p><br />
+                                    <a href='#' class='button'>Add to Order</a>
                                 </div>
                             </div>";
                           }
@@ -72,27 +73,23 @@
                         <h3 class="subheadings">APPETIZERS</h3>
                         <p class="descriptions">Need something to start you off? Choose one of our delectable appetizers that everyone in the family can share and enjoy. Whether it would be a cheesy explosion from our Cheesy Nachos to nibbling on Taquitos before your main course.</p> 
                         <div class="productImages" >
-                            <div class="c4">
-                                <div class="productThumb">	
-                                    <img src="img/nachos.jpg" alt="nachos">
-                                    <a href="nachosProduct.php"><h3 class="productTitle">Cheesy Nachos</h3></a>
-                                    <p>$8.95</p>
-                                </div>
-                            </div>
-                            <div class="c4">	
-                                <div class="productThumb">
-                                    <img src="img/quesadilla.jpg" alt="nachos">
-                                    <a href="quesadillaProduct.php"><h3 class="productTitle">Quesadilla</h3></a>
-                                    <p>$8.95</p>
-                                </div>  
-                            </div>              
-                            <div class="c4">	
-                                <div class="productThumb">
-                                    <img src="img/taquitos.jpg" alt="nachos">
-                                    <a href="taquitosProduct.php"><h3 class="productTitle">Taquitos</h3></a>
-                                    <p>$8.95</p>
-                                </div>
-                            </div>
+                            <?php
+                            $con=mysqli_connect("sulley.cah.ucf.edu", "st369963", "Goknights1", "st369963");
+                            $result = mysqli_query($con,"SELECT * FROM products WHERE category = 'Appetizer'");
+
+                              while($row = mysqli_fetch_array($result)) {
+
+                                echo "<div class='c4'>
+                                    <div class='productThumb'>  
+                                        <a href='#news'><img src="."'img/".$row['productImage']."'"." alt='juice'></a>
+                                        <a href='jarritosProduct.php'><h3 class='productTitle'>".$row['productName']."</h3></a>
+                                        <p>".$row['price']."</p><br />
+                                    <a href='#' class='button'>Add to Order</a>
+                                    </div>
+                                </div>";
+                              }
+
+                              ?>
                         </div>                
                     </div>
                  </div> 
@@ -103,34 +100,23 @@
                         <h3 class="subheadings" id="mainCourse">MAIN COURSES</h3>
                         <p class="descriptions">We offer various kinds of dishes so everyone can find something they enjoy, from the fiery hot Locos Tacos to the delightfully crunchy Tostados. You can also pick chicken or beef with any of our courses to further customize your meal. </p> 
                         <div class="productImages" >
-                            <div class="c4">
-                                <div class="productThumb">	
-                                    <img src="img/locosTacos.jpg" alt="taco">
-                                    <a href="locostacosProduct.php"><h3 class="productTitle">Locos Tacos</h3></a>
-                                    <p>$7.95</p>
-                                </div>
-                            </div>
-                            <div class="c4">
-                                <div class="productThumb">	
-                                    <img src="img/burrito.jpg" alt="burrito">
-                                    <a href="burritoProduct.php"><h3 class="productTitle">Burrito</h3></a>
-                                    <p>$8.95</p>
-                                </div> 
-                            </div>               
-                            <div class="c4">
-                                <div class="productThumb">	
-                                    <img src="img/fajitas.jpg" alt="fajitas">
-                                    <a href="fajitasProduct.php"><h3 class="productTitle">Fajitas</h3></a>
-                                    <p>$7.95</p>
-                                </div>
-                            </div>
-                            <div class="c4">	
-                                <div class="productThumb">
-                                    <img src="img/tostadas.jpg" alt="tostadas">
-                                    <a href="tostadosProduct.php"><h3 class="productTitle">Tostados</h3></a>
-                                    <p>$7.95</p>
-                                </div> 
-                            </div>
+                            <?php
+                            $con=mysqli_connect("sulley.cah.ucf.edu", "st369963", "Goknights1", "st369963");
+                            $result = mysqli_query($con,"SELECT * FROM products WHERE category = 'Main Course'");
+
+                              while($row = mysqli_fetch_array($result)) {
+
+                                echo "<div class='c4'>
+                                    <div class='productThumb'>  
+                                        <a href='#news'><img src="."'img/".$row['productImage']."'"." alt='juice'></a>
+                                        <a href='jarritosProduct.php'><h3 class='productTitle'>".$row['productName']."</h3></a>
+                                        <p>".$row['price']."</p><br />
+                                    <a href='#' class='button'>Add to Order</a>
+                                    </div>
+                                </div>";
+                              }
+
+                              ?>
                         </div>
                     </div>                    
           		</div>
