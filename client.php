@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!doctype html>
 <head>
 	<meta charset="utf-8">
@@ -19,7 +22,7 @@
                         <input type="text" class="searchinput" name="search" size="19" maxlength="120"><input type="submit" value="search" class="tfbutton">
                 </form>
                 <a class="c2" id="myAccount" href="client.php">My Account</a>
-                <a class="c1" id="shoppingBag" href="cart.php">Bag(3)</a>
+                <a class="c1" id="shoppingBag" href="cart.php">Bag(<?php echo count($_SESSION['product']); ?>)</a>
             </header>
        	</div>
 	</div>

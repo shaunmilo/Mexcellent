@@ -8,7 +8,7 @@
 
 /* Global Classes */
 
-a.button {
+.button {
 	padding: 10px;
 	border: none;
 	background-color: #98bf21;
@@ -16,7 +16,7 @@ a.button {
 	color: #fff;
 }
 
-a.button:hover {
+.button:hover {
 	background: #c30;
 	color: #fff;
 }

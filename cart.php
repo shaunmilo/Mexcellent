@@ -1,3 +1,6 @@
+<?php 
+session_start();
+?>
 <!doctype html>
 <head>
 	<meta charset="utf-8">
@@ -20,7 +23,7 @@
                         <input type="text" class="searchinput" name="search" size="19" maxlength="120"><input type="submit" value="search" class="tfbutton">
                 </form>
                 <a class="c2" id="myAccount" href="client.php">My Account</a>
-                <a class="c1" id="shoppingBag" href="cart.php">Bag(3)</a>
+                <a class="c1" id="shoppingBag" href="cart.php">Bag(<?php echo count($_SESSION['product']); ?>)</a>
             </header>
        	</div>
 	</div>
@@ -36,32 +39,18 @@
         			<table>
                           <tr>
                             <th></th>
-                            <th>Item</th>
-                            <th>Quantity</th>		
+                            <th>Item</th>		
                             <th>Price</th>
                             <th>Edit</th>
                           </tr>
-                          <tr>
-                            <td><img src="img/locosTacos.jpg" alt="taco"></td>
-                            <td>Locos Tacos</td>
-                            <td>2</td>		
-                            <td>$2.99</td>
+                          <?php
+                            echo "<tr>
+                            <td><img src='img/".$_SESSION["image"]."' alt=''></td>
+                            <td>".$_SESSION["product"]."</td>        
+                            <td>".$_SESSION["price"]."</td>
                             <td>Remove</td>
-                          </tr>
-                          <tr>
-                            <td><img src="img/jarritos.jpg" alt="juice"></td>
-                            <td>Jarritos</td>		
-                            <td>2</td>
-                            <td>$4.00</td>
-                            <td>Remove</td>
-                          </tr>
-                          <tr>
-                            <td><img src="img/taquitos.jpg" alt="taquitos"></td>
-                            <td>Taquitos</td>		
-                            <td>1</td>
-                            <td>$4.00</td>
-                            <td>Remove</td>
-                          </tr>
+                          </tr>";
+                          ?>
                      </table>
         		</div>
         		<div id="pickupCheckout" class="c4">
@@ -76,7 +65,7 @@
                     </div> 
                     <div id="checkout">
                         <h4>CHECKOUT TOTAL:</h4>
-                        <p id="totalAmount">$33.34</p>
+                        <p id="totalAmount"><?php echo $_SESSION["price"]; ?></p>
                         <a href="fulfillment.php" id="buyButton" >CHECKOUT</a>
                     </div> 
         		</div>        

@@ -1,15 +1,7 @@
 <!doctype html>
 <?php
-    // mysql_connect("sulley.cah.ucf.edu", "st369963", "Goknights1") or die(mysql_error());
-    // mysql_select_db("st369963") or die(mysql_error());
-    
-    // $result = mysql_query("select * from products where category = 'Beverage' limit 1 union(select * from products where category = 'Appetizer' limit 1) union(select * from products where category = 'Main Course' limit 1)")
-    // or die(mysql_error());  
-    
-    // $data = array();
-    
-    // while ($row = mysql_fetch_object($result))
-    // $data[] = $row;
+session_start();
+$con=mysqli_connect("sulley.cah.ucf.edu", "st369963", "Goknights1", "st369963");
 ?>
 <head>
 	<meta charset="utf-8">
@@ -32,7 +24,7 @@
                         <input type="text" class="searchinput" name="search" size="19" maxlength="120"><input type="submit" value="search" class="tfbutton">
                 </form>
                 <a class="c2" id="myAccount" href="client.php">My Account</a>
-                <a class="c1" id="shoppingBag" href="cart.php">Bag(3)</a>
+                <a class="c1" id="shoppingBag" href="cart.php">Bag(<?php echo count($_SESSION['product']); ?>)</a>
             </header>
        	</div>
 	</div>
@@ -51,7 +43,6 @@
                         <p class="descriptions">Choose from a diverse selection of beverages that everyone in the family can enjoy. From the fruity Jarritos sodas that's appropriate for children to a more adult Margarita or Corona for the adults. We also have a wide range of flavors to choose from so whichever one you pick, you won't be disappointed. </p> 
                         <div class="productImages" >
                         <?php
-                        $con=mysqli_connect("sulley.cah.ucf.edu", "st369963", "Goknights1", "st369963");
                         $result = mysqli_query($con,"SELECT * FROM products WHERE category = 'Beverage'");
 
                           while($row = mysqli_fetch_array($result)) {
@@ -61,7 +52,12 @@
                                     <a href='#news'><img src="."'img/".$row['productImage']."'"." alt='juice'></a>
                                     <a href='#'><h3 class='productTitle'>".$row['productName']."</h3></a>
                                     <p>".$row['price']."</p><br />
-                                    <a href='#' class='button'>Add to Order</a>
+                                    <form method='post' action='backend/addCart.php'>
+                                        <input type='hidden' name='productImage' value=".$row['productImage']." />
+                                        <input type='hidden' name='productName' value=".$row['productName']." />
+                                        <input type='hidden' name='price' value=".$row['price']." />
+                                        <button class='button' type='submit'>Add to Order</button>
+                                    </form>
                                 </div>
                             </div>";
                           }
@@ -74,7 +70,6 @@
                         <p class="descriptions">Need something to start you off? Choose one of our delectable appetizers that everyone in the family can share and enjoy. Whether it would be a cheesy explosion from our Cheesy Nachos to nibbling on Taquitos before your main course.</p> 
                         <div class="productImages" >
                             <?php
-                            $con=mysqli_connect("sulley.cah.ucf.edu", "st369963", "Goknights1", "st369963");
                             $result = mysqli_query($con,"SELECT * FROM products WHERE category = 'Appetizer'");
 
                               while($row = mysqli_fetch_array($result)) {
@@ -84,7 +79,12 @@
                                         <a href='#news'><img src="."'img/".$row['productImage']."'"." alt='juice'></a>
                                         <a href='jarritosProduct.php'><h3 class='productTitle'>".$row['productName']."</h3></a>
                                         <p>".$row['price']."</p><br />
-                                    <a href='#' class='button'>Add to Order</a>
+                                    <form method='post' action='backend/addCart.php'>
+                                        <input type='hidden' name='productImage' value=".$row['productImage']." />
+                                        <input type='hidden' name='productName' value=".$row['productName']." />
+                                        <input type='hidden' name='price' value=".$row['price']." />
+                                        <button class='button' type='submit'>Add to Order</button>
+                                    </form>
                                     </div>
                                 </div>";
                               }
@@ -101,7 +101,6 @@
                         <p class="descriptions">We offer various kinds of dishes so everyone can find something they enjoy, from the fiery hot Locos Tacos to the delightfully crunchy Tostados. You can also pick chicken or beef with any of our courses to further customize your meal. </p> 
                         <div class="productImages" >
                             <?php
-                            $con=mysqli_connect("sulley.cah.ucf.edu", "st369963", "Goknights1", "st369963");
                             $result = mysqli_query($con,"SELECT * FROM products WHERE category = 'Main Course'");
 
                               while($row = mysqli_fetch_array($result)) {
@@ -111,7 +110,12 @@
                                         <a href='#news'><img src="."'img/".$row['productImage']."'"." alt='juice'></a>
                                         <a href='jarritosProduct.php'><h3 class='productTitle'>".$row['productName']."</h3></a>
                                         <p>".$row['price']."</p><br />
-                                    <a href='#' class='button'>Add to Order</a>
+                                    <form method='post' action='backend/addCart.php'>
+                                        <input type='hidden' name='productImage' value=".$row['productImage']." />
+                                        <input type='hidden' name='productName' value=".$row['productName']." />
+                                        <input type='hidden' name='price' value=".$row['price']." />
+                                        <button class='button' type='submit'>Add to Order</button>
+                                    </form>
                                     </div>
                                 </div>";
                               }

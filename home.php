@@ -1,4 +1,5 @@
 <?php
+session_start();
 
 mysql_connect("sulley.cah.ucf.edu", "st369963", "Goknights1") or die(mysql_error());
 mysql_select_db("st369963") or die(mysql_error());
@@ -29,7 +30,7 @@ $row = mysql_fetch_array($result);
                         <input type="text" class="searchinput" name="search" size="19" maxlength="120"><input type="submit" value="search" class="tfbutton">
                 </form>
                 <a class="c2" id="myAccount" href="client.php">My Account</a>
-                <a class="c1" id="shoppingBag" href="cart.php">Bag(3)</a>
+                <a class="c1" id="shoppingBag" href="cart.php">Bag(<?php echo count($_SESSION['product']); ?>)</a>
             </header>
        	</div>
 	</div>
