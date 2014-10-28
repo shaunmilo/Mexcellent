@@ -1,3 +1,12 @@
+<?php
+
+mysql_connect("sulley.cah.ucf.edu", "st369963", "Goknights1") or die(mysql_error());
+mysql_select_db("st369963") or die(mysql_error());
+$result = mysql_query("SELECT * FROM products WHERE category = 'Beverage'");
+$row = mysql_fetch_array($result);
+
+?>
+
 <!doctype html>
 <head>
 	<meta charset="utf-8">
@@ -8,25 +17,6 @@
     <link rel="stylesheet" href="css/styles.css">  
 </head>
 <body>
-    
-    <?php
-//	mysql_connect("sulley.cah.ucf.edu", "st369963", "Goknights1") or die(mysql_error());
-//	mysql_select_db("st369963") or die(mysql_error());
-//	
-//	
-//	$result = mysql_query("select * from products where category = 'Beverage' limit 1 union(select * from products where category = 'Appetizer' limit 1) union(select * from products where category = 'Main Course' limit 1)")
-//	or die(mysql_error());  
-//	
-//	$data = array();
-//	
-//	while ($row = mysql_fetch_object($result))
-//	   $data[] = $row;
-
-$con = mysqli_connect("sulley.cah.ucf.edu", "st369963", "Goknights1", "st369963");
-$result = mysqli_query($con,"SELECT * FROM products WHERE category = 'Appetizer'");
-$row = mysqli_fetch_array($result)
-
-?>
 
     
 <!--Header-->
