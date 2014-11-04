@@ -12,21 +12,8 @@ session_start();
 </head>
 <body>
 
-    
 <!--Header-->
-	<div id="header">
-    	<div id="site-container" class="grid">
-        	<header class="row">
-            	<a href="home.php" class="c2" id="title" >Mexcellent</a>
-                <a href="catalog.php" class="c3" id="menuButton">View our Menu</a>
-                <form id="searchbar"  class="c3" method="get" action="http://www.google.com">
-                        <input type="text" class="searchinput" name="search" size="19" maxlength="120"><input type="submit" value="search" class="tfbutton">
-                </form>
-                <a class="c2" id="myAccount" href="client.php">My Account</a>
-                <a class="c1" id="shoppingBag" href="cart.php">Bag(<?php echo count($_SESSION['product']); ?>)</a>
-            </header>
-       	</div>
-	</div>
+    <?php include("includes/header.php"); ?>
 
 <!--Content-->	
     <div id="site-content">         
@@ -123,15 +110,8 @@ session_start();
 
         
 <!-- Footer-->        
-	<div id="footerBg">
-    	<div class="grid">
-        	<footer class="row">
-            	<p class="c2">@Mexcellent 2014</p>
-              	<p class="c7">This site is not official and is an assignment for a UCF Digital Media course</p>
-                <p class="c3">Designed by Stephanie Garay</p>
-            </footer>
-        </div>
-	</div> 
+    <?php include("includes/footer.php"); ?> 
+     
 	</div>   
 </body>
 </html>

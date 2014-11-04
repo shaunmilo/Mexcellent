@@ -28,6 +28,8 @@
 	width:100%;
 	height:50px;
 	border-bottom: 2px solid #E4C462;
+	position: fixed;
+	z-index: 999;
 }
 
 #title{
@@ -46,8 +48,8 @@
 	margin-top:10px;
 }
 
-#searchbar{
-	margin-top:10px;
+.searchbar{
+	margin: 1em 0;
 }
 
 #myAccount{
@@ -72,13 +74,16 @@
 #homeBanner{
 	color:#FFF;
 	text-align:center;
-	margin-top:-410px;
-	margin-bottom:300px;	
+	background: url("../img/banner.jpg") no-repeat center fixed;
+	width: 100%;
+	height: 25em;
+	background-size: 100%;
 }
 
 #homeBanner h1{
 	font-size:6em;
 	margin:0;
+	padding: 50px 0 0 0;
 }
 
 #section{
@@ -126,14 +131,16 @@
 .sectionHeading{
 	color:#FFF;
 	text-align:center;
-	margin-top:-330px;
-	margin-bottom:320px;
 	font-size:4em;
+	padding: 2em 0;
 }
 
 #menuBg{
-	width:100%;
-	margin-top:0;
+	background: url("../img/menu.jpg") no-repeat center fixed;
+	height: 25em;
+	background-size: 100%;
+	margin: 0;
+	width: auto;
 }
 
 #locationBg
