@@ -1,11 +1,8 @@
 <?php
 session_start();
-
-mysql_connect("sulley.cah.ucf.edu", "st369963", "Goknights1") or die(mysql_error());
-mysql_select_db("st369963") or die(mysql_error());
-$result = mysql_query("SELECT * FROM products WHERE category = 'Beverage'");
-$row = mysql_fetch_array($result);
-
+include("includes/config.php");
+$result = mysqli_query($con, "SELECT * FROM products WHERE category = 'Beverage'");
+$row = mysqli_fetch_array($result);
 ?>
 
 <!doctype html>
@@ -19,7 +16,6 @@ $row = mysql_fetch_array($result);
 </head>
 <body>
 
-    
 <!--Header-->
 	<div id="header">
     	<div id="site-container" class="grid">

@@ -1,7 +1,8 @@
 <!doctype html>
 <?php
 session_start();
-$con=mysqli_connect("sulley.cah.ucf.edu", "st369963", "Goknights1", "st369963");
+include("includes/config.php");
+$result = mysqli_query($con,"SELECT * FROM products WHERE category = 'Beverage'");
 ?>
 <head>
 	<meta charset="utf-8">
@@ -29,7 +30,6 @@ $con=mysqli_connect("sulley.cah.ucf.edu", "st369963", "Goknights1", "st369963");
                         <p class="descriptions">Choose from a diverse selection of beverages that everyone in the family can enjoy. From the fruity Jarritos sodas that's appropriate for children to a more adult Margarita or Corona for the adults. We also have a wide range of flavors to choose from so whichever one you pick, you won't be disappointed. </p> 
                         <div class="productImages" >
                         <?php
-                        $result = mysqli_query($con,"SELECT * FROM products WHERE category = 'Beverage'");
 
                           while($row = mysqli_fetch_array($result)) {
 

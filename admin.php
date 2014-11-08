@@ -1,3 +1,10 @@
+<?php
+session_start();
+include("includes/config.php");
+$result = mysqli_query($con, "SELECT * FROM products");
+$row = mysqli_fetch_array($result);
+?>
+
 <!doctype html>
 <head>
 	<meta charset="utf-8">
@@ -8,7 +15,7 @@
     <link rel="stylesheet" href="css/styles.css">
     <link href='http://fonts.googleapis.com/css?family=PT+Serif' rel='stylesheet' type='text/css'>
 </head>
-<body>
+<body class="admin">
 
     
 <!--Header-->
@@ -22,61 +29,46 @@
             </div>
         	<div class="row">
                 <div id="cartTable" class="c12">
+
+                <h4>Create New Product</h4>
+                <form method="post" action="backend/addProduct.php" class="addProduct">
+
+                    Image: <input type="file" name="productImage" id="productImage"> 
+                    Product Name: <input type="text" name="productName" />
+                    Price: <input type="text" name="productPrice" /> 
+                    Category:
+                        <select name="productCat">
+                            <option>Main Course</option>
+                            <option>Appetizer</option>
+                            <option>Beverage</option>
+                        </select>
+                        <br />
+
+                    Product Description: <br /><textarea name="productDesc"></textarea>
+                    <input type="submit" value="Add Product" name="submit" />
+
+                </form>
+
                     <table>
                       <tr>
                         <th></th>
-                        <th>Item</th>
-                        <th>Quantity</th>		
+                        <th>Item</th>		
                         <th>Price</th>
-                        <th>Address</th>
-                        <th>Order Date</th>
+                        <th>Category</th>
                         <th>Edit</th>
                       </tr>
+                      <?php while($row = mysqli_fetch_array($result)) {
+                        echo "
                       <tr>
-                        <td><img src="img/tostadas.jpg" alt="food"></td>
-                        <td>Tostados</td>
-                        <td>4</td>		
-                        <td>$31.80</td>
-                        <td>4000 Central Florida Blvd, Orlando, FL 32816</td>
-                        <td>09/25/14</td>
-                        <td class="removeButton">Remove</td>
-                      </tr>
-                      <tr>
-                        <td><img src="img/margarita.jpg" alt="drink"></td>
-                        <td>Margarita</td>
-                        <td>2</td>		
-                        <td>$11.90</td>
-                        <td>4000 Central Florida Blvd, Orlando, FL 32816</td>
-                        <td>09/27/14</td>
-                        <td class="removeButton">Remove</td>
-                      </tr>
-                      <tr>
-                        <td><img src="img/jarritos.jpg" alt="drink"></td>
-                        <td>Jarritos</td>
-                        <td>2</td>		
-                        <td>$7.60</td>
-                        <td>4000 Central Florida Blvd, Orlando, FL 32816</td>
-                        <td>09/28/14</td>
-                        <td class="removeButton">Remove</td>
-                      </tr>
-                      <tr>
-                        <td><img src="img/burrito.jpg" alt="burrito"></td>
-                        <td>Burrito</td>		
-                        <td>2</td>
-                        <td>$17.90</td>
-                        <td>4000 Central Florida Blvd, Orlando, FL 32816</td>
-                        <td>09/29/14</td>
-                        <td class="removeButton">Remove</td>
-                      </tr>
-                      <tr>
-                        <td><img src="img/taquitos.jpg" alt="taquitos"></td>
-                        <td>Taquitos</td>		
-                        <td>1</td>
-                        <td>$8.95</td>
-                        <td>4000 Central Florida Blvd, Orlando, FL 32816</td>
-                        <td>09/30/14</td>
-                        <td class="removeButton">Remove</td>
-                      </tr>
+                        <td><img src='img/".$row['productImage']."' alt='food'></td>
+                        <td>".$row['productName']."</td>	
+                        <td>".$row['price']."</td>
+                        <td>".$row['category']."</td>
+                        <td class='removeButton'>Remove</td>
+                      </tr>";
+                  }
+
+                  ?>
                     </table>
         		</div>
 			</div>                 
