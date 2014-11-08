@@ -1,8 +1,8 @@
 <?php
 
 include("includes/config.php");
-$fname= $_REQUEST['firstname'];
-$lname= $_REQUEST['lastname'];
+$fname= $_REQUEST['firstName'];
+$lname= $_REQUEST['lastName'];
 $email= $_REQUEST['email'];
 $password= $_REQUEST['password'];
 $phoneNumber= $_REQUEST['mobilenum'];

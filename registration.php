@@ -21,11 +21,13 @@
                     
                      <div class="fl">
                      <h3 id="subheadingsRegistration" class="c5">REGISTRATION</h3>
-                        First Name: <input type="text" name="cardFirstName"><br>
-                        Last Name:<input type="text" name="cardLastName"><br>
+                        First Name: <input type="text" name="firstName"><br>
+                        Last Name:<input type="text" name="lastName"><br>
                         Email: <input type="text" name="email"><br>
                         Password: <input type="text" name="password"><br>
                         Phone Number: <input type="text" name="mobilenum"><br> 
+                        Card First Name: <input type="text" name="cardFirstName"><br>
+                        Card Last Name:<input type="text" name="cardLastName"><br>
                         Card Number: <input type="text" name="cardNumber"><br>
                         Expiration Date: <input type="text" name="expiration"><br>
                         CSC: <input type="text" name="securityCode"><br>
