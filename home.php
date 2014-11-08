@@ -1,11 +1,15 @@
 <?php
 session_start();
+<<<<<<< HEAD
 
 $con = mysqli_connect("sulley.cah.ucf.edu", "st369963", "Goknights1", "st369963") or die(mysql_error());
 
 $result = mysqli_query($con, "SELECT * FROM products WHERE category = 'Beverage'");
 $row = mysqli_fetch_array($result);
 
+include("includes/config.php");
+$result = mysqli_query($con, "SELECT * FROM products WHERE category = 'Beverage'");
+$row = mysqli_fetch_array($result);
 ?>
 
 <!doctype html>
@@ -17,7 +21,25 @@ $row = mysqli_fetch_array($result);
 	<link rel="stylesheet" href="css/gridiculous.css">
     <link rel="stylesheet" href="css/styles.css">  
 </head>
-<body>   
+<body>
+
+<!--Header-->
+	<div id="header">
+    	<div id="site-container" class="grid">
+        	<header class="row">
+            	<a href="home.php" class="c2" id="title" >Mexcellent</a>
+                <a href="catalog.php" class="c3" id="menuButton">View our Menu</a>
+                <form id="searchbar"  class="c3" method="get" action="http://www.google.com">
+                        <input type="text" class="searchinput" name="search" size="19" maxlength="120"><input type="submit" value="search" class="tfbutton">
+                </form>
+                <a class="c2" id="myAccount" href="client.php">My Account</a>
+                <a class="c1" id="shoppingBag" href="cart.php">Bag(3)</a>
+            </header>
+       	</div>
+	</div>
+    
+    
+
     
 <!--Mobile Navigation-->
 
