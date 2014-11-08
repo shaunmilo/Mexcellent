@@ -53,7 +53,7 @@ session_start();
                     <div id="checkout">
                         <h4>CHECKOUT TOTAL:</h4>
                         <p id="totalAmount"><?php echo $_SESSION["price"]; ?></p>
-                        <a href="fulfillment.php" id="buyButton" >CHECKOUT</a>
+                        <a href="signin.php" id="buyButton" >CHECKOUT</a>
                     </div> 
         		</div>        
         	</div>
