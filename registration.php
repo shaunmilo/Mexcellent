@@ -17,24 +17,29 @@
     	<div class="grid"> 
  			<div id="registrationPage" class="row">
             	<div id="fulfillmentTitle" class="c12">
-                     <form action="demo_form.asp" >
+                     <form action="backend/createUser.php" method="POST">
+                    
                      <div class="fl">
                      <h3 id="subheadingsRegistration" class="c5">REGISTRATION</h3>
-                        First Name: <input type="text" name="firstname"><br>
-                        Last Name:<input type="text" name="lastname"><br>
+                        First Name: <input type="text" name="cardFirstName"><br>
+                        Last Name:<input type="text" name="cardLastName"><br>
                         Email: <input type="text" name="email"><br>
                         Password: <input type="text" name="password"><br>
                         Phone Number: <input type="text" name="mobilenum"><br> 
-                        Card Number: <input type="text" name="firstname"><br>
-                        Expiration Date: <input type="text" name="lname"><br>
-                        CSC: <input type="text" name="homenum"><br>
+                        Card Number: <input type="text" name="cardNumber"><br>
+                        Expiration Date: <input type="text" name="expiration"><br>
+                        CSC: <input type="text" name="securityCode"><br>
+                        Address: <input type="text" name="billingAddress"><br>
+                        City: <input type="text" name="billingCity"><br>
+                        State: <input type="text" name="billingState"><br>
+                        Zipcode: <input type="text" name="billingZip"><br> 
                     </div>    
                     <div class="fr">    
-             		<h3 id="subheadings" class="c9">Delivering Address</h3>                       
-                        Address: <input type="text" name="address"><br>
-                        City: <input type="text" name="city"><br>
-                        State: <input type="text" name="state"><br>
-                        Zipcode: <input type="text" name="zipcode"><br>                    
+             		<h3 id="subheadings" class="c5">Delivering Address</h3>                       
+                        Address: <input type="text" name="shippingAddress"><br>
+                        City: <input type="text" name="shippingCity"><br>
+                        State: <input type="text" name="shippingState"><br>
+                        Zipcode: <input type="text" name="shippingZip"><br>                    
                         </div>                                                             
                         <input id="continueButton" type="submit" value="Submit">
                      </form>  
