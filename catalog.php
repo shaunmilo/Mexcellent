@@ -19,7 +19,7 @@ $con=mysqli_connect("sulley.cah.ucf.edu", "st369963", "Goknights1", "st369963");
 <!--Content-->	
     <div id="site-content">      
 		<div id="menuBg">
-          <h2 class="sectionHeading">Menu</h2>
+          <h2 class="sectionHeading bannerHeading">Menu</h2>
         </div>
         <div id="menu" class="grid">
         	<div class="productSection">	

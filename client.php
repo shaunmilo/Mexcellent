@@ -17,7 +17,7 @@ session_start();
 
 <!--Home Content-->	
     <div id="site-content">   
-    	<div class="grid"> 
+    	<div class="grid block-fix"> 
  			<div id="cartPage">
             	<div id="cartTitle" class="c9 s3">
             		<h3 id="subheadings" class="c9">MY ACCOUNT</h3>               

@@ -25,6 +25,10 @@
 	display:none;
 }
 
+.block-fix {
+	display: inline-block;
+}
+
 /* START OF NAVIGATION */
 .clearfix:before,
 .clearfix:after {
@@ -207,7 +211,7 @@ nav a#pull {
 	padding-top:10px;
 	margin-bottom:20px;
 	font-size:2em;
-	margin-top:-40px;
+	margin-top: 20px;
 }
 
 .descriptions{	
@@ -223,7 +227,11 @@ nav a#pull {
 	color:#FFF;
 	text-align:center;
 	font-size:4em;
-	padding: 1em 0;
+	position: relative;
+}
+
+.bannerHeading {
+	top: 2em;
 }
 
 #menuBg{
@@ -232,6 +240,7 @@ nav a#pull {
 	background-size: 100%;
 	margin: 0;
 	width: auto;
+	background-position-y: 0px;
 }
 
 #locationBg
@@ -406,7 +415,6 @@ nav a#pull {
 	padding-top:150px;
 	font-weight:bold;
 	margin-bottom:80px;
-	display: inline-block;
 }
 
 table {
