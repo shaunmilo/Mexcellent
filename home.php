@@ -1,4 +1,5 @@
 <?php
+session_start();
 
 mysql_connect("sulley.cah.ucf.edu", "st369963", "Goknights1") or die(mysql_error());
 mysql_select_db("st369963") or die(mysql_error());
@@ -38,16 +39,20 @@ $row = mysql_fetch_array($result);
     
 <!--Mobile Navigation-->
 
-
+	<?php include("includes/header.php"); ?>
 
 <!--Content-->	
 	<div id="site-content">
-    	<img id="homeBannerBg" src="img/banner.jpg" alt="banner">
-		<div id="homeBanner" class="grid">
-        	<h1>Mexcellent</h1>
-    		<h2>Genuine Tex-Mex Cuisine</h2>
-		</div>
-               
+    	<!-- <img id="homeBannerBg" src="img/banner.jpg" alt="banner"> -->
+        <div id="homeBanner">
+            <h1>Mexcellent</h1>
+            <h2>Genuine Tex-Mex Cuisine</h2>
+
+            <form class="searchbar" method="get" action="http://www.google.com">
+            <input type="text" class="searchinput" name="search" size="19" maxlength="120" value="Search for food..."> <input type="submit" value="search" class="tfbutton">
+            </form>
+        </div>
+     
         <!--About Section-->
         <div class="grid">
             <div class="section">
@@ -101,14 +106,6 @@ $row = mysql_fetch_array($result);
 	</div>
 
 <!-- Footer-->        
-	<div id="footerBg">
-    	<div class="grid">
-        	<footer class="row">
-            	<p class="c2">@Mexcellent 2014</p>
-              	<p class="c7">This site is not official and is an assignment for a UCF Digital Media course</p>
-                <p class="c3">Designed by Stephanie Garay</p>
-            </footer>
-        </div>
-	</div>   
+	<?php include("includes/footer.php"); ?>  
 </body>
 </html>
