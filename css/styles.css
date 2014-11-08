@@ -676,6 +676,18 @@ footer a:link, a:active, a:visited {
 	padding-top:150px;
 }
 
+#subheadingsRegistration{
+	text-align:center;
+	color:#c30;
+	border-style: solid;
+    border-color: #98bf21;
+	border-size:10px;
+	padding-bottom:10px;
+	padding-top:10px;
+	margin-bottom:20px;
+	font-size:2em;
+	margin-top:-50px;
+}
 
 /*mobile navigation*/
 

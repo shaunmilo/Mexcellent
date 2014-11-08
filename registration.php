@@ -16,17 +16,35 @@
     <div id="site-content">   
     	<div class="grid"> 
  			<div id="registrationPage" class="row">
-            	<div id="fulfillmentTitle" class="c6 s3">
-            		<h3 id="subheadings" class="c9">REGISTRATION</h3>
-                     <form action="demo_form.asp" class="c9">
-                        Name: <input type="text" name="firstname"><br>
+            	<div id="fulfillmentTitle" class="c12">
+                     <form action="demo_form.asp" >
+                     <div class="fl">
+                     <h3 id="subheadingsRegistration" class="c5">REGISTRATION</h3>
+                        First Name: <input type="text" name="firstname"><br>
+                        Last Name:<input type="text" name="lastname"><br>
                         Email: <input type="text" name="email"><br>
                         Password: <input type="text" name="password"><br>
-                        Mobile Number: <input type="text" name="mobilenum"><br>                              
+                        Phone Number: <input type="text" name="mobilenum"><br> 
+                        Card Number: <input type="text" name="firstname"><br>
+                        Expiration Date: <input type="text" name="lname"><br>
+                        CSC: <input type="text" name="homenum"><br>
+                    </div>    
+                    <div class="fr">    
+             		<h3 id="subheadings" class="c9">Delivering Address</h3>                       
+                        Address: <input type="text" name="address"><br>
+                        City: <input type="text" name="city"><br>
+                        State: <input type="text" name="state"><br>
+                        Zipcode: <input type="text" name="zipcode"><br>                    
+                        </div>                                                             
                         <input id="continueButton" type="submit" value="Submit">
-                     </form>                  
+                     </form>  
+                                   
           		</div>                 
          	</div>   
+            
+
+
+                    
         </div>
    </div>      
         
