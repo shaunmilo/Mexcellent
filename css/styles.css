@@ -93,7 +93,8 @@
 
 .section{
 	margin-top:0px;
-	height:320px;
+	height:400px;
+	padding: 1em;
 }
 
 .sectionInfo{
@@ -125,14 +126,13 @@
 
 #featuredBg{
 	width:100%;
-	margin-top:150px;
 }
 
 .sectionHeading{
 	color:#FFF;
 	text-align:center;
 	font-size:4em;
-	padding: 2em 0;
+	padding: 1em 0;
 }
 
 #menuBg{
@@ -147,11 +147,6 @@
 {
 	height:550px;
 	background-color:#98bf21;
-	margin-top:450px;	
-}
-
-#location{
-	margin-top:-300px;
 }
 
 .locationHeading{
@@ -320,6 +315,7 @@
 	padding-top:150px;
 	font-weight:bold;
 	margin-bottom:80px;
+	display: inline-block;
 }
 
 table {
