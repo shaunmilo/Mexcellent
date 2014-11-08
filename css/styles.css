@@ -29,6 +29,9 @@
 	display: inline-block;
 }
 
+.fl {float: left;}
+.fr {float: right;}
+
 /* START OF NAVIGATION */
 .clearfix:before,
 .clearfix:after {
