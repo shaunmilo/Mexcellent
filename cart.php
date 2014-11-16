@@ -51,15 +51,6 @@ session_start();
                      </table>
         		</div>
         		<div id="pickupCheckout" class="c4">
-        			<div id="pickup">
-            			<p>Pickup Time & Date</p>
-                        <select id="time">
-                          <option value="morning">11:00AM-3:00PM</option>
-                          <option value="evening">3:00PM-5:00</option>
-                          <option value="afternoon">5:00PM-8:00PM</option>
-                        </select><br/><br/>
-                        <input type="date" name="date">
-                    </div> 
                     <div id="checkout">
                         <h4>CHECKOUT TOTAL:</h4>
                         <p id="totalAmount"><?php echo $_SESSION["price"]; ?></p>
