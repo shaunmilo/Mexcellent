@@ -14,22 +14,22 @@
 
 <!-- Content-->	
     <div id="site-content">   
-    	<div class="grid"> 
+    	<div class="grid">
  			<div id="checkoutPage">
-            	<div id="signin" >
+            	<div id="signin" class="c4">
             		<h3>Sign in to your account</h3>
-                     <form action="demo_form.asp">
-                        Email: <input type="text" name="email"><br>
-                        Password: <input type="text" name="password"><br>
+                     <form action="backend/login.php" method="post">
+                        Email: <br /><input type="text" name="email"><br>
+                        Password: <br /><input type="text" name="password"><br>
                         <input id="buyButton" type="submit" value="Submit">
                      </form>                  
           		</div> 
-            	<div id="guestsignin" >
+            	<div id="guestsignin" class="c4">
             		<h3 >Guest Checkout</h3></br>
                     <p>Sign in without creating an account</p>
                     <a href="fulfillment.php" id="buyButton">Continue as Guest</a>             
           		</div>
-                <div id="createAccount">
+                <div id="createAccount" class="c4">
              		<h3 >Create an Account</h3></br>
                     <p>Want to save your info? It's easy, just create a new account by clicking the button below.</p>
                     <a href="registration.php" id="buyButton">Create New Account</a>                	
