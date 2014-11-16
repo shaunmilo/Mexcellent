@@ -55,16 +55,20 @@ $row = mysqli_fetch_array($result);
                         <th>Item</th>		
                         <th>Price</th>
                         <th>Category</th>
-                        <th>Edit</th>
+                        <th>Delete</th>
+                        <th>Update</th>
                       </tr>
                       <?php while($row = mysqli_fetch_array($result)) {
                         echo "
                       <tr>
+                      <form method='post' action='backend/updateProduct.php'>
                         <td><img src='img/".$row['productImage']."' alt='food'></td>
-                        <td>".$row['productName']."</td>	
-                        <td>".$row['price']."</td>
-                        <td>".$row['category']."</td>
-                        <td class='removeButton'>Remove</td>
+                        <td><input type='hidden' name='id' value='".$row['productID']."' /><input type='text' name='product' value='".$row['productName']."' /></td>	
+                        <td><input type='text' name='price' value='".$row['price']."' /></td>
+                        <td><input type='text' name='category' value='".$row['category']."' /></td>
+                        <td><input type='submit' value='Update' name='update'></td>
+                        <td><input type='submit' value='Remove' name='delete'></td>
+                        </form>
                       </tr>";
                   }
 
