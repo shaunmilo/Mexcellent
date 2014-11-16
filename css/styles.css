@@ -38,82 +38,27 @@ body {
 .fr {float: right;}
 
 /* START OF NAVIGATION */
-.clearfix:before,
-.clearfix:after {
-	content: "";
-	display: table;
-}
+#navigation{
+	margin-left:3%;
+} 
 
-.clearfix:after {
-	clear: both;
-}
-
-.clearfix {
-	*zoom: 1;
-}
-
-#nav_border {
-	height: 5px;
-	width: 100%;
-	background: #bb2a3b;
-}
-
-nav {
-	height: 110px;
-	width: 100%;
-	background: #15171b;
-    font-size: 10pt;  
-	font: 'Open Sans', sans-serif;
-	letter-spacing: 0.1em;
-    position: relative;  
-    text-transform: uppercase;
-}  
-
-nav img#logo {
-	position: absolute;
-	height: 70px;
-	margin-top: 10px;
-	margin-left: 20px;
-}
-
-nav ul {  
-	padding: 0;
-	margin-top:30px;
-	margin-left: auto;
-	margin-right: auto;
-    width: 600px;  
-    height: 40px;  
-}  
-
-nav li {
+#navigation li {
 	display: block;
 	float: left;
 }
 
-nav a {  
-    color: #fff;  
-    display: block;  
-    width: 120px; 
-    height: 80px; 
-    text-align: center;  
-    text-decoration: none;  
-    line-height: 40px;  
-} 
-
-nav li:last-child a {  
-    border-right: 0;  
-}  
-
-nav a:hover {  
-    background-color: #25282d;  
-}  
-
-nav a.current {
-    background-color: #bb2a3b;  
+#navigation a{
+	text-decoration:none;
+	
+	
 }
 
-nav a#pull {
-	display: none;
+#about{
+	margin-left:300px;
+}
+
+.menuButton{
+	margin-left:50px;
 }
 
 
@@ -142,10 +87,6 @@ nav a#pull {
 #header a{
 	text-decoration:none;
 	color:#FFC;
-}
-
-#menuButton{
-	margin-top:10px;
 }
 
 .searchbar{
