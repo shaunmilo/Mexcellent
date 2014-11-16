@@ -47,31 +47,26 @@ $row = mysql_fetch_array($result);
                         <p class="descriptions">At Mexcellent restaurant, we aim to do a few things but do them exceptionally well. When Mexcellent first opened its doors in a few months ago, the goal was simple: to serve high quality, delicious food quickly with an experience that not only exceeded, but redefined the fast food experience.</p>
                     </div>
                 </div>
-                    <img class="c6 end" src="img/restaurant1.jpg" alt="about"> 
-            </div>
-        </div> 
-       
-       <!--Members-->
-       <div class="section">
-            <div class="c6">
-                	<div class="sectionInfo">
-                        <h3 class="subheadings">Team Members</h3>
-                        </div>
-                    <div class="c6">
-                    <img src="img/angie.jpg" alt="members" width="200" height="80">
-                    </div>
-                    <div class="c6">
-                    <img src="img/jennifer.jpg" alt="members" width="200" height="80">
-                    </div>
-                     <div class="c6">
-                    <img src="img/shaun.jpg" alt="members" width="200" height="80">
-                    </div>
-   
-                    <div class="c6">
-                    <img src="img/stephanie.jpg" alt="members" width="200" height="80">
-                    </div>
-                              	
+                 <!--Members-->
+                    <div class="c6 our-team">
+                            <div class="sectionInfo">
+                                <h3 class="subheadings">Team Members</h3>
+                                </div>
+                            <div class="c6">
+                            <img src="img/angie.jpg" alt="members" width="200" height="80">
+                            </div>
+                            <div class="c6">
+                            <img src="img/jennifer.jpg" alt="members" width="200" height="80">
+                            </div>
+                             <div class="c6">
+                            <img src="img/shaun.jpg" alt="members" width="200" height="80">
+                            </div>
+           
+                            <div class="c6">
+                            <img src="img/stephanie.jpg" alt="members" width="200" height="80">
+                            </div>              
 
+                </div>  
             </div>
         </div> 
        

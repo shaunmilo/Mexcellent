@@ -134,8 +134,9 @@ body {
 
 .section{
 	margin-top:0px;
-	height:400px;
+	height:auto;
 	padding: 1em;
+	display: inline-block;
 }
 
 .featurePrice{
@@ -184,9 +185,14 @@ body {
 	background-position-y: 0px;
 }
 
+#location {
+	display: inline-block;
+}
+
 #locationBg
 {
-	height:550px;
+	padding: 1em;
+	height:auto;
 	background-color:#98bf21;
 }
 
@@ -349,6 +355,16 @@ body {
     position:relative;
     top:2px;
     left:2px;
+}
+
+/* About Page */
+
+.our-team img {
+	width: 200px;
+	height: 200px;
+	margin: 10px;
+	border-radius: 50%;
+	border: 5px solid #98bf21;
 }
 
 /* Cart */

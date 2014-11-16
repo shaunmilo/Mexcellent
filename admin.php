@@ -62,11 +62,12 @@ $row = mysqli_fetch_array($result);
                     <table>
                       <tr>
                         <th></th>
-                        <th>Item</th>		
+                        <th>Item</th>
+                        <th>Description</th>	
                         <th>Price</th>
                         <th>Category</th>
-                        <th>Delete</th>
                         <th>Update</th>
+                        <th>Delete </th>
                       </tr>
                       <?php while($row = mysqli_fetch_array($result)) {
                         echo "
@@ -74,6 +75,7 @@ $row = mysqli_fetch_array($result);
                       <form method='post' action='backend/updateProduct.php'>
                         <td><img src='img/".$row['productImage']."' alt='food'></td>
                         <td><input type='hidden' name='id' value='".$row['productID']."' /><input type='text' name='product' value='".$row['productName']."' /></td>	
+                        <td><input type='text' name='description' value='".$row['description']."' /></td>
                         <td><input type='text' name='price' value='".$row['price']."' /></td>
                         <td><input type='text' name='category' value='".$row['category']."' /></td>
                         <td><input type='submit' value='Update' name='update'></td>

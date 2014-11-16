@@ -45,7 +45,7 @@ session_start();
                             <td><img src='img/".$_SESSION["image"]."' alt=''></td>
                             <td>".$_SESSION["product"]."</td>        
                             <td>".$_SESSION["price"]."</td>
-                            <td>Remove</td>
+                            <td><form method='post' action='backend/updateCart.php'><input type='submit' value='Remove' /></form></td>
                           </tr>";
                           ?>
                      </table>
