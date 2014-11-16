@@ -40,6 +40,7 @@ body {
 /* START OF NAVIGATION */
 #navigation{
 	margin-left:3%;
+	margin-top:5px;
 } 
 
 #navigation li {
@@ -403,20 +404,6 @@ th {
 	width:30%;	
 }
 
-#pickup{
-	background-color:#fff;
-	text-align:center;
-	width:100%;
-	padding:30px;
-	border:2px solid #f0e7c4;
-}
-
-#pickup p{
-	color:#c30;
-	margin-bottom:10px;
-	font-size:1.2em;
-}
-
 #checkout{
 	background-color:#fff;
 	margin-top:10px;
@@ -424,6 +411,7 @@ th {
 	width:100%;
 	padding:20px;
 	border:2px solid #f0e7c4;
+	margin-top:28px;
 }
 
 #checkout h4{

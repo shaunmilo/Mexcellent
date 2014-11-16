@@ -1,6 +1,8 @@
 <?php
 session_start();
 
+error_reporting( error_reporting() & ~E_NOTICE );
+
 include("includes/config.php");
 $result = mysqli_query($con, "SELECT * FROM products WHERE category = 'Beverage'");
 $row = mysqli_fetch_array($result);
