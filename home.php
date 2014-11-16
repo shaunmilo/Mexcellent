@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 <?php
 session_start();
 
@@ -89,7 +89,7 @@ $row = mysqli_fetch_array($result);
 <!-- Footer-->        
 	<?php include("includes/footer.php"); ?>  
 </body>
-=======
+
 <?php
 session_start();
 
@@ -192,5 +192,5 @@ $row = mysqli_fetch_array($result);
 <!-- Footer-->        
 	<?php include("includes/footer.php"); ?>  
 </body>
->>>>>>> origin/master
+
 </html>
