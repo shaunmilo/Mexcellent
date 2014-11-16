@@ -19,24 +19,6 @@ $row = mysqli_fetch_array($result);
 </head>
 <body>
 
-<!--Header-->
-	<div id="header">
-    	<div id="site-container" class="grid">
-        	<header class="row">
-            	<a href="home.php" class="c2" id="title" >Mexcellent</a>
-                <a href="catalog.php" class="c3" id="menuButton">View our Menu</a>
-                <form id="searchbar"  class="c3" method="get" action="http://www.google.com">
-                        <input type="text" class="searchinput" name="search" size="19" maxlength="120"><input type="submit" value="search" class="tfbutton">
-                </form>
-                <a class="c2" id="myAccount" href="client.php">My Account</a>
-                <a class="c1" id="shoppingBag" href="cart.php">Bag(3)</a>
-            </header>
-       	</div>
-	</div>
-    
-    
-
-    
 <!--Mobile Navigation-->
 
 	<?php include("includes/header.php"); ?>
@@ -48,8 +30,8 @@ $row = mysqli_fetch_array($result);
             <h1>Mexcellent</h1>
             <h2>Genuine Tex-Mex Cuisine</h2>
 
-            <form class="searchbar" method="get" action="http://www.google.com">
-            <input type="text" class="searchinput" name="search" size="19" maxlength="120" value="Search for food..."> <input type="submit" value="search" class="tfbutton">
+            <form class="searchbar" action="search.php" method="post">
+            <input type="text" class="searchinput" name="term" size="19" maxlength="120"> <input type="submit" value="search" class="tfbutton">
             </form>
         </div>
      
