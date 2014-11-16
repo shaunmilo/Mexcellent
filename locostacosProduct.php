@@ -47,7 +47,7 @@
                        </fieldset >
                     </div>
                 </div>
-                <p class="c6" id="productDescription">A fiery concoction of jalapenos, green peppers and chili combined with tomato, lettuce, cheese and chicken or beef to make the perfect combination for a taco. Locos Tacos truly deserves its name.</p>   
+                <p class="c6" id="productDescription">A fiery concoction of jalapenos, green peppers and chili combined with tomato, lettuce, cheese and chicken or beef to make the perfect combination for a taco. Locos Tacos truly deserves its name.</p>                  
             </div>
             
                 
@@ -104,15 +104,7 @@
 	</div>
         
 <!-- Footer-->        
-	<div id="footerBg">
-    	<div class="grid">
-        	<footer class="row">
-            	<p class="c2">@Mexcellent 2014</p>
-              	<p class="c7">This site is not official and is an assignment for a UCF Digital Media course</p>
-                <p class="c3">Designed by Stephanie Garay</p>
-            </footer>
-        </div>
-	</div> 
+    <?php include("includes/footer.php"); ?> 
       
 </body>
 </html>

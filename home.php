@@ -1,8 +1,6 @@
 <?php
 session_start();
 
-$con = mysqli_connect("sulley.cah.ucf.edu", "st369963", "Goknights1", "st369963") or die(mysql_error());
-
 include("includes/config.php");
 $result = mysqli_query($con, "SELECT * FROM products WHERE category = 'Beverage'");
 $row = mysqli_fetch_array($result);

@@ -75,15 +75,8 @@ $row = mysqli_fetch_array($result);
         </div>                     
       
 <!-- Footer-->        
-	<div id="footerBg">
-    	<div class="grid">
-        	<footer class="row">
-            	<p class="c2">@Mexcellent 2014</p>
-              	<p class="c7">This site is not official and is an assignment for a UCF Digital Media course</p>
-                <p class="c3">Designed by Stephanie Garay</p>
-            </footer>
-        </div>
-	</div>
+    <?php include("includes/footer.php"); ?>
+
     </div>   
 </body>
 </html>
