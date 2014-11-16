@@ -43,12 +43,14 @@ error_reporting( error_reporting() & ~E_NOTICE );
                             <th>Edit</th>
                           </tr>
                           <?php
+                          
                             echo "<tr>
                             <td><img src='img/".$_SESSION["image"]."' alt=''></td>
                             <td>".$_SESSION["product"]."</td>        
                             <td>".$_SESSION["price"]."</td>
                             <td><form method='post' action='backend/updateCart.php'><input type='submit' value='Remove' /></form></td>
-                          </tr>";
+                            </tr>";
+                          
                           ?>
                      </table>
         		</div>
