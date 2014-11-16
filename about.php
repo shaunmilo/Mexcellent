@@ -67,8 +67,58 @@ $row = mysql_fetch_array($result);
                             </div>              
 
                 </div>  
-            </div>
-        </div> 
+                
+			<div class="section">
+              <!--Delivery Policy-->
+                <div class="c6">
+                	<div class="sectionInfo">
+                        <h3 class="subheadings">Delivery Policy</h3>
+                        <p class="descriptions">We will begin preparing your order as soon as it is submitted. Once your food has been prepared, we will deliver it immediately. Our delivery packaging is specially designed to keep hot items hot and cold items cold. Standard expected delivery time is 45 minutes or less.</p>
+                    </div>
+                </div>
+                 <!--Tax Policy-->
+                    <div class="c6">
+                            <div class="sectionInfo">
+                                <h3 class="subheadings">Return Policy</h3>
+                                <p class="descriptions">Customer satisfaction is our number one priority. If you are not completely satisfied with your order please do not hesitate to contact us. We will do everything in our power to make it right. We will replace an incorrect order, the replacement will be put ahead of all others orders. And if all else fails, we will give you your money back.</p>
+                             </div>
+            
+					</div>                  
+                
+             <div class="section">
+              <!--Return Policy-->
+                <div class="c6">
+                	<div class="sectionInfo">
+                        <h3 class="subheadings">Privacy Policy</h3>
+                        <p class="descriptions">If you purchase our products, Mexcellent will collect personal information, such as your name, address, billing and credit card information. This information is used to complete the purchase transaction and deliver the products you have requested. 
+
+Information about your computer, such as your IP address, browser type, domain names, access times and referring website addresses, may be automatically collected. This information is used to maintain quality of services and to provide general statistics.
+</p>
+                    </div>
+                </div>
+                 <!--Security Statement-->
+                    <div class="c6">
+                            <div class="sectionInfo">
+                                <h3 class="subheadings">Security Statement</h3>
+                                <p class="descriptions">We take our customer’s security concerns seriously.  We only collect as much personal information as is needed to provide our services in an efficient and effective manner. 
+
+We strive to ensure that user data is kept secure. We will only release information when legally required to help law enforcement investigations or legal proceedings. Mexcellent does not sell any personal information to third parties.
+</p>
+                             </div>
+            
+					</div> 
+ <div class="section">
+ 
+              <!--Tax Policy-->
+                <div class="c6">
+                	<div class="sectionInfo">
+                        <h3 class="subheadings">Tax Policy</h3>
+                        <p class="descriptions">As per Florida Law, a 6% sales tax will be added to the price of all prepared food items. This sales tax is collected from the purchaser at the time of sale.</p>
+                    </div>
+                </div>               
+                
+            	</div>
+        	</div> 
        
               
         <!--Location-->
