@@ -26,24 +26,14 @@
     <div id="site-content">   
     	<div class="grid">
  			<div id="checkoutPage">
-            	<div id="signin" class="c4">
-            		<h3>Sign in to your account</h3>
-                     <form action="backend/login.php" method="post">
-                        Email: <br /><input type="text" name="email"><br>
-                        Password: <br /><input type="text" name="password"><br>
+            	<div id="signin" class="c12">
+            		<h3>Admin Login</h3>
+                     <form action="backend/adminLogin.php" method="post">
+                        Username: <br /><input type="text" name="username"><br>
+                        Password: <br /><input type="password" name="password"><br>
                         <input id="buyButton" type="submit" value="Submit">
                      </form>                  
-          		</div> 
-            	<div id="guestsignin" class="c4">
-            		<h3 >Guest Checkout</h3></br>
-                    <p>Sign in without creating an account</p>
-                    <a href="cart.php" id="buyButton">Continue as Guest</a>             
-          		</div>
-                <div id="createAccount" class="c4">
-             		<h3 >Create an Account</h3></br>
-                    <p>Want to save your info? It's easy, just create a new account by clicking the button below.</p>
-                    <a href="registration.php" id="buyButton">Create New Account</a>                	
-                </div>                
+          		</div>                
          	</div>   
         </div>
    </div>      

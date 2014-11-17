@@ -118,11 +118,15 @@ We strive to ensure that user data is kept secure. We will only release informat
                 </div>               
                 
             	</div>
+                <!--Location-->
+         
         	</div> 
-       
-              
-        <!--Location-->
-        <div id="locationBg"> 
+                                
+	</div>
+    </div>
+    </div>
+
+    <div id="locationBg"> 
             <div id="location" class="grid">
                 <img class="c6" id="homeImages" src="img/ucfMap.jpg" alt="map"> 
                 <div id="locationInfo" class="c6 end">
@@ -133,9 +137,7 @@ We strive to ensure that user data is kept secure. We will only release informat
                     <p>Need help in finding our location? No problem, just give us a call and we'll be more than happy to assist you.</p> 
                 </div>  
             </div>
-        </div>                          
-	</div>
-    </div>
+        </div>
 
 <!-- Footer-->        
 	<?php include("includes/footer.php"); ?>  

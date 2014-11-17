@@ -29,12 +29,12 @@
             	<div id="fulfillmentTitle" class="c12">
                      <form action="backend/createUser.php" method="POST">
                     
-                     <div class="fl">
-                     <h3 id="subheadingsRegistration" class="c5">REGISTRATION</h3>
+                     <div class="c6">
+                     <h3 id="subheadingsRegistration">REGISTRATION</h3>
                         First Name: <input type="text" name="firstName"><br>
                         Last Name:<input type="text" name="lastName"><br>
                         Email: <input type="text" name="email"><br>
-                        Password: <input type="text" name="password"><br>
+                        Password: <input type="password" name="password"><br>
                         Phone Number: <input type="text" name="mobilenum"><br> 
                         Card First Name: <input type="text" name="cardFirstName"><br>
                         Card Last Name:<input type="text" name="cardLastName"><br>
@@ -46,8 +46,8 @@
                         State: <input type="text" name="billingState"><br>
                         Zipcode: <input type="text" name="billingZip"><br> 
                     </div>    
-                    <div class="fr">    
-             		<h3 id="subheadings" class="c5">Delivering Address</h3>                       
+                    <div class="c6">    
+             		<h3 id="subheadings">Delivering Address</h3>                       
                         Address: <input type="text" name="shippingAddress"><br>
                         City: <input type="text" name="shippingCity"><br>
                         State: <input type="text" name="shippingState"><br>
