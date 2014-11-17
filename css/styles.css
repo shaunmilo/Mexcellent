@@ -26,10 +26,6 @@ body {
 	color: #fff;
 }
 
-#responsiveNav{
-	display:none;
-}
-
 .block-fix {
 	display: inline-block;
 }
@@ -38,69 +34,182 @@ body {
 .fr {float: right;}
 
 /* START OF NAVIGATION */
-#navigation{
-	margin-left:3%;
-	margin-top:5px;
-} 
 
-#navigation li {
-	display: block;
-	float: left;
+/* Clearfix */
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+.clearfix {
+    *zoom: 1;
 }
 
-#navigation a{
-	text-decoration:none;
-	
-	
-}
+/* Basic Styles */
 
-#about{
-	margin-left:300px;
-}
-
-.menuButton{
-	margin-left:50px;
-}
-
-
-/*  Header  */
-
-.mobileNav{
-	display:none;
-}
-
-#header{
-	background-color:#c30;
-	width:100%;
-	height:50px;
-	border-bottom: 2px solid #E4C462;
-	position: fixed;
-	z-index: 999;
-}
-
-#title{
-	margin-top:5px;
-	color:#fff;
-	margin-right:30px;
+.title{
 	font-size:1.3em;
 }
 
-#header a{
-	text-decoration:none;
-	color:#FFC;
+#desktopHome{
+	float:left;
+	margin-left:5%;
+	margin-right:40%;
 }
 
-.searchbar{
-	margin: 1em 0;
+#navigation{
+	margin-right:5%;	
 }
 
-#myAccount{
-	margin-top:10px;
+nav {
+	height: 40px;
+	width: 100%;
+	background: #c30;
+	font-size: 11pt;
+	font-weight: bold;
+	position: relative;
+	border-bottom: 2px solid #E4C462;
+	
+	position: fixed;
+	z-index: 999;
+}
+nav ul{
+	padding: 0;
+	margin: 0 auto;
+	height: 40px;
+		
+}
+nav li {
+	display: inline;
+	float: left;
+}
+nav a {
+	color: #ffc;
+	display: inline-block;
+	width: 100px;
+	text-align: center;
+	text-decoration: none;
+	line-height: 40px;
+
+}
+nav li a {
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	
+}
+nav li:last-child a {
+	border-right: 0;
+}
+nav a:hover, nav a:active {
+	background-color:rgba(255,255,255,0.1);
+}
+nav a#pull {
+	display: none;
 }
 
-#shoppingBag{
-	margin-top:10px;
+/*Styles for iPad screen*/
+@media screen and (max-width: 768px) {
+	#desktopHome{
+		display:none;
+	}	
+	
+	nav { 
+  		height: auto;
+		border-bottom: 0;
+		border-bottom: 2px solid #E4C462;
+  	}
+  	nav ul {
+  		width: 100%;
+  		display: none;
+  		height: auto;
+  	}
+  	nav li {
+  		width: 50%;
+  		float: left;
+  		position: relative;
+		background-color:#952500;
+		float:left;
+  	}
+  	nav li a {
+		border-bottom: 1px solid #E4C462;
+		border-right: 1px solid #E4C462;
+	}
+  	nav a {
+	  	text-align: left;
+	  	width: 100%;
+	  	text-indent: 25px;
+  	}
+	
+	nav a:hover, nav a:active {
+		background-color:#842100;
+	}	
+	
+	nav a#pull {
+		display: block;
+		background-color:#c30;
+		width: 100%;
+		position: relative; 
+	}
+	nav a#pull:after {
+		content:"";
+		background: url("../img/nav-icon.png") no-repeat;
+		width: 30px;
+		height: 30px;
+		display: inline-block;
+		position: absolute;
+		right: 15px;
+		top: 10px;
+	}	
 }
+
+/*Styles for iPhone screen*/
+@media only screen and (max-width : 320px) {
+	#desktopHome{
+		display:none;
+	}	
+		
+	nav {
+		border-bottom: 0;
+		border-bottom: 2px solid #E4C462;
+	}
+	nav ul {
+		display: none;
+		height: auto;
+		float:left;
+	}
+	
+	nav li{
+		background-color:#952500;
+		width:100%;
+	}
+	
+	nav a:hover, nav a:active {
+		background-color:#842100;
+	}	
+	
+	nav a#pull {
+		display: block;
+		background-color:#c30;
+		width: 100%;
+		position: relative; 
+	}
+	nav a#pull:after {
+		content:"";
+		background: url("../img/nav-icon.png") no-repeat;
+		width: 30px;
+		height: 30px;
+		display: inline-block;
+		position: absolute;
+		right: 15px;
+		top: 10px;
+	}
+}
+
+
 
 /* Home Content */
 
@@ -559,6 +668,8 @@ footer {
 	bottom: 0;
 	margin: 0;
 }
+
+
 
 footer a:link, a:active, a:visited {
 	color: #fff;

@@ -3,7 +3,7 @@
 	<meta charset="utf-8">
 	<title>Mexcellent Burrito- Stephanie Garay</title>
 	<meta name="description" content="">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> 
 	<link rel="stylesheet" href="css/gridiculous.css">
     <link rel="stylesheet" href="css/styles.css">  
     <script>
@@ -16,6 +16,28 @@
       ga('send', 'pageview');
 
     </script>
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script>
+		$(function() {
+			var pull 		= $('#pull');
+				menu 		= $('nav ul');
+				menuHeight	= menu.height();
+
+			$(pull).on('click', function(e) {
+				e.preventDefault();
+				menu.slideToggle();
+			});
+
+			$(window).resize(function(){
+        		var w = $(window).width();
+        		if(w > 320 && menu.is(':hidden')) {
+        			menu.removeAttr('style');
+        		}
+    		});
+		});
+	</script>
 </head>
 <body>
 
