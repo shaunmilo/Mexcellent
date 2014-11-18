@@ -26,8 +26,8 @@
     <div id="site-content">   
     	<div class="grid">
  			<div id="checkoutPage">
-            	<div id="signin" class="c12">
-            		<h3>Admin Login</h3>
+            	<div id="signin" class="row">
+            		<h3 class="subheadings">Admin Login</h3>
                      <form action="backend/adminLogin.php" method="post">
                         Username: <br /><input type="text" name="username"><br>
                         Password: <br /><input type="password" name="password"><br>

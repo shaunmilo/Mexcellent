@@ -1,11 +1,11 @@
 <?php
 session_start();
 
-// error_reporting( error_reporting() & ~E_NOTICE );
+ error_reporting( error_reporting() & ~E_NOTICE );
 
-include("includes/config.php");
-$result = mysqli_query($con, "SELECT * FROM products WHERE category = 'Beverage'");
-$row = mysqli_fetch_array($result);
+//include("includes/config.php");
+//$result = mysqli_query($con, "SELECT * FROM products WHERE category = 'Beverage'");
+//$row = mysqli_fetch_array($result);
 ?>
 
 <!doctype html>
@@ -71,25 +71,25 @@ $row = mysqli_fetch_array($result);
             <div class="section">
                 <div class="c6">
                 	<div class="sectionInfo">
-                        <h3 class="subheadings">OUR STORY</h3>
+                        <h3 class="subheadings" id="ourStoryTitle">OUR STORY</h3>
                         <p class="descriptions">If it isn't really Mexican food, then what is Tex-Mex? Tex-Mex is a Texas version of Mexican food and it's a commercial cuisine for the most part. Some ingredients used in Tex-Mex dishes are fairly common in Mexican cuisine, but other ingredients not typically used in Mexico are often added. Tex-Mex cuisine is also characterized by its heavy use of shredded cheese, meat, beans, and spices, in addition to Mexican-style tortillas. </p>
                     </div>
                 </div>
-                    <img class="c6 end" src="img/about1.jpg" alt="about"> 
+                    <img id="aboutPic" class="c6 end" src="img/about1.jpg" alt="about"> 
             </div>
         </div> 
                        
         <!--Featured Item--> 
         <div id="featuredBg">
-            <img src="img/featured.jpg" alt="featured"> 
-            <h3 class="sectionHeading">FEATURED PRODUCT</h3>
+            <h3 class="sectionHeading" id="featuredTitle">FEATURED PRODUCT</h3>
         </div>          
                           
         <div class="grid">
             <div class="section">
                 <div class="c1">
                 </div>
-                <img class="c4" src="img/<?php echo $row['productImage']; ?>" alt="about"> 
+
+                <img id="featuredImage" class="c4" src="img/<?php echo $row['productImage']; ?>" alt="about">
                 <div class="c6 end">
                 	<div class="sectionInfo">
                         <h3 class="subheadings"><?php echo $row['productName']; ?></h3>
@@ -104,7 +104,7 @@ $row = mysqli_fetch_array($result);
               
         <!--Location-->
         <div id="locationBg"> 
-            <h3 class="sectionHeading">LOCATION</h3> 
+            <h3 class="sectionHeading" id="locationTitle">LOCATION</h3> 
             <div id="location" class="grid">
                 <img class="c6" id="homeImages" src="img/ucfMap.jpg" alt="map"> 
                 <div id="locationInfo" class="c6 end">
