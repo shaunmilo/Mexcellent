@@ -73,18 +73,13 @@ $row = mysql_fetch_array($result);
                             <div class="sectionInfo">
                                 <h3 class="subheadings">Team Members</h3>
                                 </div>
-                            <div class="c6">
-                            <img src="img/angie.jpg" alt="members" width="200" height="80">
+                            <div >
+                            <div id="members">
+                                <img src="img/angie.jpg" alt="members">
+                                <img src="img/jennifer.jpg" alt="members">
+                                <img src="img/shaun.jpg" alt="members">
+                                <img src="img/stephanie.jpg" alt="members">
                             </div>
-                            <div class="c6">
-                            <img src="img/jennifer.jpg" alt="members" width="200" height="80">
-                            </div>
-                             <div class="c6">
-                            <img src="img/shaun.jpg" alt="members" width="200" height="80">
-                            </div>
-           
-                            <div class="c6">
-                            <img src="img/stephanie.jpg" alt="members" width="200" height="80">
                             </div>              
 
                 </div>  

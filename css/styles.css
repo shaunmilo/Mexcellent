@@ -254,6 +254,13 @@ nav a#pull {
 		font-size:1.8em;
 	}
 	
+
+	/*About Page*/ 
+	#members img{
+		width:40%;
+		height:auto;
+	}
+	
 }
 
 /*Styles for iPhone screen*/
@@ -871,6 +878,13 @@ footer a:link, a:active, a:visited {
 
 #signin .subheadings{
 	width:300px;
+}
+
+/*About Page*/
+
+#members img{
+	float:left;
+	margin-left:5%;
 }
 
 
