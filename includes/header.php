@@ -3,6 +3,7 @@
     	<a href="home.php"  id="desktopHome" class="title">Mexcellent</a>
     	<div id="header">
             <ul class="clearfix" id="navigation">
+            		<li><a id="homeNav" href="home.php">Home</a></li>
                     <li><a href="about.php">About Us</a></li>
                     <li><a href="catalog.php"  class="menuButton">Menu</a></li>
                     <li><a href="client.php" class="menuButton">My Account</a></li>

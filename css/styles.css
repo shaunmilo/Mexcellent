@@ -33,6 +33,10 @@ body {
 .fl {float: left;}
 .fr {float: right;}
 
+#homeNav{
+	display:none;
+}
+
 /* START OF NAVIGATION */
 
 #navigation ul {
@@ -130,6 +134,10 @@ nav a#pull {
 @media screen and (max-width: 768px) {
 	#desktopHome{
 		display:none;
+	}
+	
+	#homeNav{
+	display:block;
 	}	
 	
 	nav { 
@@ -143,7 +151,7 @@ nav a#pull {
   		height: auto;
   	}
   	nav li {
-  		width: 50%;
+  		width: 100%;
   		float: left;
   		position: relative;
 		background-color:#952500;
@@ -152,6 +160,7 @@ nav a#pull {
   	nav li a {
 		border-bottom: 1px solid #E4C462;
 		border-right: 1px solid #E4C462;
+		
 	}
   	nav a {
 	  	text-align: left;
@@ -259,6 +268,15 @@ nav a#pull {
 	#members img{
 		width:40%;
 		height:auto;
+	}
+	
+	/*catalog*/
+	#menu .subheadings{
+		font-size:1.8em;
+	}
+	
+	.sectionHeading bannerHeading{
+		
 	}
 	
 }
