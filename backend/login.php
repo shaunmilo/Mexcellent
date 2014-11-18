@@ -13,21 +13,16 @@ $count=mysqli_num_rows($result);
 		session_unset(); 
 		session_start();
 		$_SESSION["currentUser"] = $myemail;
-		?>
-		<meta http-equiv="refresh" content="0;url=<?php echo $actual_link = "http://$_SERVER[HTTP_HOST]"; ?>/Mexcellent/client.php">
-	<?php 
+		header("Location: ../client.php");
 		} else {
 		session_unset();
 		session_start();
-		?>
-		<meta http-equiv="refresh" content="0;url=<?php echo $actual_link = "http://$_SERVER[HTTP_HOST]"; ?>/Mexcellent/registration.php">
-	<?php } ?>
-
-<?php
+		header("Location: ../registration.php");
+	 }
 
 if ($_POST['logout']) {
-	session_unset();
-	header("Location: /../client.php");
+	session_destroy();
+	header("Location: /~sh504336/dig4530c/Mexcellent/client.php");
 }
 
  ?>

@@ -65,9 +65,12 @@ $row = mysql_fetch_array($result);
                 <div class="c6">
                 	<div class="sectionInfo">
                         <h3 class="subheadings">Mexcellent Company</h3>
-                        <p class="descriptions">At Mexcellent restaurant, we aim to do a few things but do them exceptionally well. When Mexcellent first opened its doors in a few months ago, the goal was simple: to serve high quality, delicious food quickly with an experience that not only exceeded, but redefined the fast food experience.</p>
+                            <div class="descriptions">
+                                <p>At Mexcellent, we aim to do a few things but do them exceptionally well. When Mexcellent first opened its doors a few months ago, the goal was simple: to serve high quality, delicious food quickly with an experience that not only exceeded, but redefined the fast food experience.</p>
+                                <p>We strive to provide fast delivery and pickup times on top of our simple ordering process. The less time that it takes for our customers to get their food in their hands, the more time they'll have to enjoy it!</p>
+                            </div>
+                        </div>
                     </div>
-                </div>
                  <!--Members-->
                     <div class="c6 our-team">
                             <div class="sectionInfo">
@@ -94,11 +97,10 @@ $row = mysql_fetch_array($result);
                 </div>
                  <!--Tax Policy-->
                     <div class="c6">
-                            <div class="sectionInfo">
-                                <h3 class="subheadings">Return Policy</h3>
-                                <p class="descriptions">Customer satisfaction is our number one priority. If you are not completely satisfied with your order please do not hesitate to contact us. We will do everything in our power to make it right. We will replace an incorrect order, the replacement will be put ahead of all others orders. And if all else fails, we will give you your money back.</p>
-                             </div>
-            
+                        <div class="sectionInfo">
+                            <h3 class="subheadings">Return Policy</h3>
+                            <p class="descriptions">Customer satisfaction is our number one priority. If you are not completely satisfied with your order please do not hesitate to contact us. We will do everything in our power to make it right. We will replace an incorrect order, the replacement will be put ahead of all others orders. And if all else fails, we will give you your money back.</p>
+                         </div>
 					</div>                  
                 
              <div class="section">

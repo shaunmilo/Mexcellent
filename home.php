@@ -60,7 +60,7 @@ $row = mysqli_fetch_array($result);
             <h2>Genuine Tex-Mex Cuisine</h2>
 
             <form class="searchbar" action="search.php" method="post">
-            <input type="text" class="searchinput" name="term" size="19" maxlength="120"> <input type="submit" value="search" class="tfbutton">
+            <input type="text" class="searchinput" name="term" size="19" maxlength="120"> <input type="submit" value="search" class="tfbutton button">
             </form>
         </div>
      
