@@ -98,22 +98,7 @@ $row = mysqli_fetch_array($result);
                 <div class="c1">
                 </div> 
             </div>
-        </div> 
-              
-        <!--Location-->
-        <div id="locationBg"> 
-            <h3 class="sectionHeading" id="locationTitle">LOCATION</h3> 
-            <div id="location" class="grid">
-                <img class="c6" id="homeImages" src="img/ucfMap.jpg" alt="map"> 
-                <div id="locationInfo" class="c6 end">
-                    <h3 class="locationHeading">ADDRESS</h3>
-                    <p> 4000 Central Florida Blvd, Orlando, FL 32816</p>
-                    <h3 class="locationHeading">PHONE NUMBER</h3>
-                    <p>(407) 823-2000</p>
-                    <p>Need help in finding our location? No problem, just give us a call and we'll be more than happy to assist you.</p> 
-                </div>  
-            </div>
-        </div>                          
+        </div>                     
 	</div>
 
 <!-- Footer-->        

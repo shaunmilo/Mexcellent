@@ -2,9 +2,8 @@
 <?php
 session_start();
 
-error_reporting( error_reporting() & ~E_NOTICE );
-//include("includes/config.php");
-//$result = mysqli_query($con,"SELECT * FROM products WHERE category = 'Beverage'");
+include("includes/config.php");
+$result = mysqli_query($con,"SELECT * FROM products WHERE category = 'Beverage'");
 ?>
 <head>
 	<meta charset="utf-8">
