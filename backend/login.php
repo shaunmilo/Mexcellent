@@ -19,7 +19,15 @@ $count=mysqli_num_rows($result);
 		} else {
 		session_unset();
 		session_start();
-		$_SESSION["message"] = 'Please create an account!';
 		?>
 		<meta http-equiv="refresh" content="0;url=<?php echo $actual_link = "http://$_SERVER[HTTP_HOST]"; ?>/Mexcellent/registration.php">
 	<?php } ?>
+
+<?php
+
+if ($_POST['logout']) {
+	session_unset();
+	header("Location: /../client.php");
+}
+
+ ?>

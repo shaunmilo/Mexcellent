@@ -51,7 +51,7 @@ require("includes/config.php");
     <div id="site-content">    
  			<div id="cartPage">
       <div class="grid">
-        <div class="section">
+  
             		<h3 id="subheadings">MY ACCOUNT</h3>               
             		<div id="account">
                 <?php
@@ -70,17 +70,27 @@ require("includes/config.php");
                       $result=mysqli_query($con,$sql);
                       $row = mysqli_fetch_array($result);
 
-                      echo "<div id='personalInfo'>
-                            <p>First Name:<span>".$row['FirstName']."</span></p>
-                            <p>Last Name: <span>".$row['LastName']."</span></p>
+                      echo "<div id='personalInfo' class='c12'>
+                            <p>Name:<span>".$row['FirstName']." ".$row['LastName']."</span></p>
                             <p>Email:<span>".$row['Email']."</span></p>
-                            <p>PhoneNumber:<span>".$row['PhoneNumber']."</span></p>";
+                            <p>PhoneNumber:<span>".$row['PhoneNumber']."</span></p>
+                            <div class='c6'>
+                              <h3 class='subheadings'>Billing Address</h3>
+                              <p><span>".$row['BillingAddress']."</span></p>
+                              <p><span>".$row['BillingCity'].", ".$row['BillingState']." ".$row['BillingZip']."</span></p>
+                            </div>
+                            <div class='c6'>
+                              <h3 class='subheadings'>Shipping Address</h3>
+                              <p><span>".$row['ShippingAddress']."</span></p>
+                              <p><span>".$row['ShippingCity'].", ".$row['ShippingState']." ".$row['ShippingZip']."</span></p>
+                            </div>
+                            </div>
+                            <form method='post' action='backend/login.php'><input type='submit' name='logout' value='Logout' class='button'></form>";
                     }
 
                  ?>  
                  </div>
                  </div>     	
-           		</div>
             </div>
 	</div>
     

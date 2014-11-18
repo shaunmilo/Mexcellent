@@ -63,7 +63,9 @@ error_reporting( error_reporting() & ~E_NOTICE );
                             <th>Price</th>
                             <th>Edit</th>
                           </tr>
-                          <?php
+                         
+                        </div>
+                        <?php
                           
                             echo "<tr>
                             <td><img src='img/".$_SESSION["image"]."' alt=''></td>
@@ -81,13 +83,20 @@ error_reporting( error_reporting() & ~E_NOTICE );
                         <p id="totalAmount"><?php echo $_SESSION["price"]; ?></p>
                         <!-- <a href="signin.php" id="buyButton" >CHECKOUT</a> -->
 
+                        <?php
+                         $userSession = $_SESSION['currentUser'];
+                         $query = "SELECT * FROM Users WHERE Email ='$userSession'";
+                         $result = mysqli_query($con,$query);
+                         $row = mysqli_fetch_array($result);
+                        ?>
+
                         <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
-                            <input type="hidden" name="cmd" value="_xclick">
-                            <input type="hidden" name="business" value="shaunmilo18@gmail.com">
-                            <input type="hidden" name="item_name" value="Item Name1">
-                            <input type="hidden" name="item_name" value="Item Name2">
-                            <input type="hidden" name="currency_code" value="USD">
-                            <input type="hidden" name="amount" value="0.00">
+                            <input type="hidden" name="cmd" value="_cart" />
+                            <input type="hidden" name="upload" value="1">
+                            <input type="hidden" name="business" value="<?php echo $userSession; ?>" />
+                            <input type="hidden" name="item_name_1" value="<?php echo $_SESSION['product']; ?>" />
+                            <input type="hidden" name="currency_code" value="USD" />
+                            <input type="hidden" name="amount_1" value="<?php echo $_SESSION['price']; ?>" />
                             <input type="image" src="http://www.paypal.com/en_US/i/btn/x-click-but01.gif" name="submit" alt="Make payments with PayPal - it's fast, free and secure!">
                         </form>
 

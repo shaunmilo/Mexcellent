@@ -34,6 +34,14 @@ body {
 .fr {float: right;}
 
 /* START OF NAVIGATION */
+<<<<<<< HEAD
+=======
+
+#navigation ul {
+	margin: 10px 0;
+	display: inline-block;
+}
+>>>>>>> origin/master
 
 /* Clearfix */
 .clearfix:before,
@@ -76,11 +84,21 @@ nav {
 	position: fixed;
 	z-index: 999;
 }
+<<<<<<< HEAD
 nav ul{
 	padding: 0;
 	margin: 0 auto;
 	height: 40px;
 		
+=======
+
+#title{
+	margin-top:5px;
+	color:#fff;
+	margin-right:30px;
+	font-size:1.3em;
+	float: left;
+>>>>>>> origin/master
 }
 nav li {
 	display: inline;
@@ -566,11 +584,24 @@ th {
 #personalInfo{
 	background-color:#fff;
 	padding:20px;
+	display: inline-block;
+	margin: 0 0 1em;
+}
+
+#personalInfo h3 {
+	font-size: 1em;
 }
 
 span{
 	margin-left:10px;
 	color:#666;
+}
+
+#account {
+	display: inline-block;
+	margin: 0 0 2em;
+	text-align: center;
+	width: 100%;
 }
 
 #accountTitle{
@@ -696,6 +727,7 @@ footer {
 	position: relative;
 	bottom: 0;
 	margin: 0;
+	text-align: center;
 }
 
 

@@ -58,7 +58,7 @@
             	<div id="guestsignin" class="c4">
             		<h3 >Guest Checkout</h3></br>
                     <p>Sign in without creating an account</p>
-                    <a href="fulfillment.php" id="buyButton">Continue as Guest</a>             
+                    <a href="cart.php" id="buyButton">Continue as Guest</a>             
           		</div>
                 <div id="createAccount" class="c4">
              		<h3 >Create an Account</h3></br>

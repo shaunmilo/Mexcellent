@@ -75,6 +75,7 @@ $result = mysqli_query($con,"SELECT * FROM products WHERE category = 'Beverage'"
                                         <input type='hidden' name='productImage' value=".$row['productImage']." />
                                         <input type='hidden' name='productName' value=".$row['productName']." />
                                         <input type='hidden' name='price' value=".$row['price']." />
+                                        <input type='hidden' name='id' value=".$row['productID']." />
                                         <button class='button' type='submit'>Add to Order</button>
                                     </form>
                                 </div>
