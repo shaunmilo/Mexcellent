@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 	<nav class="clearfix">
     	<a href="home.php"  id="desktopHome" class="title">Mexcellent</a>
     	<div id="header">
@@ -12,7 +12,7 @@
         </div>
         
 	</nav>
-=======
+
 <div id="header">
 	<div id="site-container" class="grid">
     	<header class="row" id="navigation">
@@ -30,4 +30,4 @@
         </header>
     </div>
 </div>
->>>>>>> origin/master
+
