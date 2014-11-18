@@ -43,12 +43,12 @@
 <!--Header-->
     <?php include("includes/header.php"); ?>
 
-<!--Home Content-->	
+
     <div id="site-content">   
     	<div class="grid"> 
  			<div id="shippingPage" class="row">
             	<div id="fulfillmentTitle" class="c6">
-            		<h3 id="subheadings" class="c9">SHIPPING ADDRESS</h3>
+            		<h3 id="subheadings">SHIPPING ADDRESS</h3>
                      <form action="demo_form.asp" class="c9">
                         First Name: <input type="text" name="firstname"><br>
                         Last Name: <input type="text" name="lname"><br>
@@ -61,8 +61,8 @@
                         <input id="continueButton" type="submit" value="Submit">
                      </form>                  
           		</div> 
-             	<div id="fulfillmentTitle" class="c6 end">
-            		<h3 id="subheadings" class="c9">BILLING INFORMATION</h3>
+             	<div id="fulfillmentTitle" class="c6">
+            		<h3 id="subheadings">BILLING INFORMATION</h3>
                      <form action="demo_form.asp" class="c9">
                         Payment Type: <input type="text" name="firstname"><br>
                         Expiration Date: <input type="text" name="lname"><br>

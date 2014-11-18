@@ -47,23 +47,30 @@
     <div id="site-content">   
     	<div class="grid">
  			<div id="checkoutPage">
+            <h2 class="subheadings">Log in</h2>
             	<div id="signin" class="c4">
-            		<h3>Sign in to your account</h3>
-                     <form action="backend/login.php" method="post">
-                        Email: <br /><input type="text" name="email"><br>
-                        Password: <br /><input type="text" name="password"><br>
-                        <input id="buyButton" type="submit" value="Submit">
-                     </form>                  
+                	<div class="signinSection">
+                        <h3>Sign in to your account</h3>
+                         <form action="backend/login.php" method="post">
+                            Email: <br /><input type="text" name="email"><br>
+                            Password: <br /><input type="text" name="password"><br>
+                            <input id="buyButton" type="submit" value="Submit">
+                         </form> 
+                     </div>                 
           		</div> 
             	<div id="guestsignin" class="c4">
-            		<h3 >Guest Checkout</h3></br>
-                    <p>Sign in without creating an account</p>
-                    <a href="cart.php" id="buyButton">Continue as Guest</a>             
+                	<div class="signinSection">
+                        <h3>Guest Checkout</h3></br>
+                        <p>Sign in without creating an account</p>
+                        <a href="cart.php" id="buyButton">Continue as Guest</a> 
+                    </div>            
           		</div>
                 <div id="createAccount" class="c4">
-             		<h3 >Create an Account</h3></br>
-                    <p>Want to save your info? It's easy, just create a new account by clicking the button below.</p>
-                    <a href="registration.php" id="buyButton">Create New Account</a>                	
+                	<div class="signinSection">
+                        <h3>Create an Account</h3></br>
+                        <p>Want to save your info? It's easy, just create a new account by clicking the button below.</p>
+                        <a href="registration.php" id="buyButton">Create New Account</a>  
+                    </div>              	
                 </div>                
          	</div>   
         </div>

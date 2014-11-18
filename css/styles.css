@@ -205,6 +205,13 @@ nav a#pull {
 		display:none;
 	}
 	
+	/*sign in page*/
+	.signinSection{
+		background-color:rgba(204,51,0,0.1);
+		padding:30px;
+		border-radius:10px;
+	}
+	
 }
 
 /*Styles for iPhone screen*/
@@ -802,6 +809,16 @@ footer a:link, a:active, a:visited {
 	margin-bottom:20px;
 	font-size:2em;
 	margin-top:-50px;
+}
+
+/*sign in page*/
+.signinSection {
+	text-align:center;
+	margin-bottom:80px;
+}
+
+#checkoutPage{
+
 }
 
 
