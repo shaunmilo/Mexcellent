@@ -53,16 +53,10 @@
                         <h3>Sign in to your account</h3>
                          <form action="backend/login.php" method="post">
                             Email: <br /><input type="text" name="email"><br>
-                            Password: <br /><input type="text" name="password"><br>
+                            Password: <br /><input type="password" name="password"><br>
                             <input id="buyButton" type="submit" value="Submit">
                          </form> 
-                     </div>                 
-            		<h3>Sign in to your account</h3>
-                     <form action="backend/login.php" method="post">
-                        Email: <br /><input type="text" name="email"><br>
-                        Password: <br /><input type="password" name="password"><br>
-                        <input id="buyButton" type="submit" value="Submit">
-                     </form>                  
+                     </div>                                 
           		</div> 
             	<div id="guestsignin" class="c4">
                 	<div class="signinSection">

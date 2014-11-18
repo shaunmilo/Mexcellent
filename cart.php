@@ -56,6 +56,15 @@ session_start();
             </div>
         	<div class="row">
         		<div id="cartTable" class="c8">
+                <?php 
+
+                echo "Number of Items in the cart = ".sizeof($_SESSION['cart'])."<br />";
+
+                while (list ($key, $val) = each ($_SESSION['cart'])) { 
+                    echo "$key -> $val <br>"; 
+                    }
+
+                ?>
         			<table>
                           <tr>
                             <th></th>

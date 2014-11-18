@@ -51,19 +51,7 @@ $row = mysqli_fetch_array($result);
 <body>
 
 <!--Header-->
-	<div id="header">
-    	<div id="site-container" class="grid">
-        	<header class="row">
-            	<a href="home.php" class="c2" id="title" >Mexcellent</a>
-                <a href="catalog.php" class="c3" id="menuButton">View our Menu</a>
-                <form id="searchbar"  class="c3" method="get" action="http://www.google.com">
-                        <input type="text" class="searchinput" name="search" size="19" maxlength="120"><input type="submit" value="search" class="tfbutton">
-                </form>
-                <a class="c2" id="myAccount" href="client.php">My Account</a>
-                <a class="c1" id="shoppingBag" href="cart.php">Bag(3)</a>
-            </header>
-       	</div>
-	</div>
+	<?php include("includes/header.php"); ?>
     
 <!--Mobile Navigation-->
 
@@ -77,7 +65,7 @@ $row = mysqli_fetch_array($result);
             <h2>Genuine Tex-Mex Cuisine</h2>
 
             <form class="searchbar" action="search.php" method="post">
-            <input type="text" class="searchinput" name="term" size="19" maxlength="120"> <input type="submit" value="search" class="tfbutton">
+            <input type="text" class="searchinput" name="term" size="19" maxlength="120"> <input type="submit" value="search" class="button">
             </form>
         </div>
      
@@ -95,7 +83,7 @@ $row = mysqli_fetch_array($result);
                       </tr>
                         <?php
 
-                        $term = mysql_real_escape_string($_REQUEST['term']);    
+                        $term = mysqli_real_escape_string($con, $_REQUEST['term']);    
 
 						$sql = "SELECT * FROM products WHERE description LIKE '%".$term."%' OR productName LIKE '%".$term."%' OR category LIKE '%".$term."%'";
 						$query = mysqli_query($con, $sql);
