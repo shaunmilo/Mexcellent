@@ -34,14 +34,11 @@ body {
 .fr {float: right;}
 
 /* START OF NAVIGATION */
-<<<<<<< HEAD
-=======
 
 #navigation ul {
 	margin: 10px 0;
 	display: inline-block;
 }
->>>>>>> origin/master
 
 /* Clearfix */
 .clearfix:before,
@@ -84,13 +81,12 @@ nav {
 	position: fixed;
 	z-index: 999;
 }
-<<<<<<< HEAD
 nav ul{
 	padding: 0;
 	margin: 0 auto;
 	height: 40px;
+}
 		
-=======
 
 #title{
 	margin-top:5px;
@@ -98,7 +94,6 @@ nav ul{
 	margin-right:30px;
 	font-size:1.3em;
 	float: left;
->>>>>>> origin/master
 }
 nav li {
 	display: inline;
