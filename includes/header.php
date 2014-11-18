@@ -13,9 +13,8 @@
         
 	</nav>
 
-<<<<<<< HEAD
-<div id="header">
-=======
+
+
 <!-- <div id="header">
 >>>>>>> origin/master
 	<div id="site-container" class="grid">
@@ -38,4 +37,4 @@
 
 =======
 </div> -->
->>>>>>> origin/master
+

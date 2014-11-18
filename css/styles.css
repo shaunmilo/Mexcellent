@@ -39,10 +39,6 @@ body {
 	margin: 10px 0;
 	display: inline-block;
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> origin/master
 
 /* Clearfix */
 .clearfix:before,
@@ -85,19 +81,13 @@ nav {
 	position: fixed;
 	z-index: 999;
 }
-<<<<<<< HEAD
 
-=======
->>>>>>> origin/master
 nav ul{
 	padding: 0;
 	margin: 0 auto;
 	height: 40px;
 }
-<<<<<<< HEAD
-=======
-		
->>>>>>> origin/master
+
 
 #title{
 	margin-top:5px;
@@ -105,10 +95,7 @@ nav ul{
 	margin-right:30px;
 	font-size:1.3em;
 	float: left;
-<<<<<<< HEAD
 
-=======
->>>>>>> origin/master
 }
 nav li {
 	display: inline;
