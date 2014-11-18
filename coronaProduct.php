@@ -54,31 +54,19 @@
                 <div class="c6">
                 	<h3 class="subheadings">Corona</h3>
                     <div id="orderQuestions" class="c12">
-                    	Light/Extra: <select>
-                          <option value="light">Light</option>
-                          <option value="extra">Extra</option>
-                        </select><br/><br/>
-                    	Qty: <select>
-                          <option value="1">1</option>
-                          <option value="2">2</option>
-                          <option value="3">3</option>
-                          <option value="4">4</option>
-                          <option value="5">5</option>
-                        </select><br/><br/>
                         <p id="price">$2.49</p><br/>
-                        <button type="button" id="buyButton">ADD TO BAG</button><br/><br/>
-                       
-                        <fieldset class="rating">
+                       <fieldset class="rating">
                             <legend>Please rate:</legend>
                             <input type="radio" id="star5" name="rating" value="5" /><label for="star5" title="Rocks!">5 stars</label>
                             <input type="radio" id="star4" name="rating" value="4" /><label for="star4" title="Pretty good">4 stars</label>
                             <input type="radio" id="star3" name="rating" value="3" /><label for="star3" title="Meh">3 stars</label>
                             <input type="radio" id="star2" name="rating" value="2" /><label for="star2" title="Kinda bad">2 stars</label>
                             <input type="radio" id="star1" name="rating" value="1" /><label for="star1" title="Sucks big time">1 star</label>
-                       </fieldset >
+                       </fieldset ><br/><br/>
+		               <p class="c6" id="productDescription">The top selling beer in the United States and one of the top-selling in the world, Corona comes bottled in a variety of different sizes and styles such as the light and extra version as well as the 6.4 fl oz and 31.8 fl oz.</p>         
+                       <button type="button" id="buyButton">ADD TO BAG</button>
                     </div>
-                </div>
-                <p class="c6" id="productDescription">The top selling beer in the United States and one of the top-selling in the world, Corona comes bottled in a variety of different sizes and styles such as the light and extra version as well as the 6.4 fl oz and 31.8 fl oz.</p>   
+                </div>  
             </div>
             
                 

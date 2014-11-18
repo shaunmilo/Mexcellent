@@ -55,20 +55,7 @@
                 <div class="c6">
                 	<h3 class="subheadings">Burrito</h3>
                     <div id="orderQuestions" class="c12">
-                    	Chicken/Beef: <select>
-                          <option value="chicken">Chicken</option>
-                          <option value="beef">Beef</option>
-                        </select><br/><br/>
-                    	Qty: <select>
-                          <option value="1">1</option>
-                          <option value="2">2</option>
-                          <option value="3">3</option>
-                          <option value="4">4</option>
-                          <option value="5">5</option>
-                        </select><br/><br/>
-                        <p id="price">$8.95</p><br/>
-                        <button type="button" id="buyButton">ADD TO BAG</button><br/><br/>
-                       
+                        <p id="price">$8.95</p><br/>                       
                         <fieldset class="rating">
                             <legend>Please rate:</legend>
                             <input type="radio" id="star5" name="rating" value="5" /><label for="star5" title="Rocks!">5 stars</label>
@@ -76,10 +63,11 @@
                             <input type="radio" id="star3" name="rating" value="3" /><label for="star3" title="Meh">3 stars</label>
                             <input type="radio" id="star2" name="rating" value="2" /><label for="star2" title="Kinda bad">2 stars</label>
                             <input type="radio" id="star1" name="rating" value="1" /><label for="star1" title="Sucks big time">1 star</label>
-                       </fieldset >
+                       </fieldset ><br/><br/>
+                       <p class="c6" id="productDescription">Lightly grilled wheat flour tortilla stuffed with corn, tomato, lettuce, rice, black beans, and chicken or beef. Side note,in Mexico, meat and refried beans are sometimes the only fillings.</p>   
+                       <button type="button" id="buyButton">ADD TO BAG</button>
                     </div>
                 </div>
-                <p class="c6" id="productDescription">Lightly grilled wheat flour tortilla stuffed with corn, tomato, lettuce, rice, black beans, and chicken or beef. Side note,in Mexico, meat and refried beans are sometimes the only fillings.</p>   
             </div>
             
                 

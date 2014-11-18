@@ -54,20 +54,7 @@
                 <div class="c6">
                 	<h3 class="subheadings">Fajitas</h3>
                     <div id="orderQuestions" class="c12">
-                    	Spicy? <select>
-                          <option value="yes">Yes</option>
-                          <option value="no">No</option>
-                        </select><br/><br/>
-                    	Qty: <select>
-                          <option value="1">1</option>
-                          <option value="2">2</option>
-                          <option value="3">3</option>
-                          <option value="4">4</option>
-                          <option value="5">5</option>
-                        </select><br/><br/>
                         <p id="price">$8.95</p><br/>
-                        <button type="button" id="buyButton">ADD TO BAG</button><br/><br/>
-                       
                         <fieldset class="rating">
                             <legend>Please rate:</legend>
                             <input type="radio" id="star5" name="rating" value="5" /><label for="star5" title="Rocks!">5 stars</label>
@@ -75,10 +62,12 @@
                             <input type="radio" id="star3" name="rating" value="3" /><label for="star3" title="Meh">3 stars</label>
                             <input type="radio" id="star2" name="rating" value="2" /><label for="star2" title="Kinda bad">2 stars</label>
                             <input type="radio" id="star1" name="rating" value="1" /><label for="star1" title="Sucks big time">1 star</label>
-                       </fieldset >
+                       </fieldset ><br/><br/>
+                        <p class="c6" id="productDescription">The first culinary evidence of the fajitas with the cut of meat, the cooking style (directly on a campfire or on a grill), and the Spanish nickname going back as far as the 1930s in the ranch lands of South and West Texas. Today it is one of the most popular dishes of Tex-Mex restaurants across the United States.</p>                        
+                        <button type="button" id="buyButton">ADD TO BAG</button>
+                       
                     </div>
-                </div>
-                <p class="c6" id="productDescription">The first culinary evidence of the fajitas with the cut of meat, the cooking style (directly on a campfire or on a grill), and the Spanish nickname going back as far as the 1930s in the ranch lands of South and West Texas. Today it is one of the most popular dishes of Tex-Mex restaurants across the United States.</p>   
+                </div>  
             </div>
             
                 

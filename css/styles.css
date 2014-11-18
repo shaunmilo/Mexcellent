@@ -99,7 +99,6 @@ nav li a {
 	box-sizing:border-box;
 	-moz-box-sizing:border-box;
 	-webkit-box-sizing:border-box;
-	
 }
 nav li:last-child a {
 	border-right: 0;
@@ -107,6 +106,7 @@ nav li:last-child a {
 nav a:hover, nav a:active {
 	background-color:rgba(255,255,255,0.1);
 }
+
 nav a#pull {
 	display: none;
 }
@@ -163,7 +163,33 @@ nav a#pull {
 		position: absolute;
 		right: 15px;
 		top: 10px;
-	}	
+	}
+	
+	/*Product Page*/
+	#orderQuestions #price{		
+		margin-bottom:-20px;	
+	}
+	
+	#orderQuestions #buyButton{
+		margin-right:5%;
+		width:100%;		
+	}
+	
+	#productDescription{
+		width:100%;
+		clear:both;
+		background:rgba(255,255,255,0.5);
+		border-radius:6px;
+	}
+	
+	#productPageImage img{
+		width:100%;
+	}
+	
+	#recommmendedProducts{
+		display:none;
+	}
+	
 }
 
 /*Styles for iPhone screen*/
@@ -405,7 +431,10 @@ nav a#pull {
 }
 
 #productDescription{
-	margin-top:30px;
+	margin-top:10px;
+	margin-bottom:10px;
+	width:100%;
+
 }
 
 
