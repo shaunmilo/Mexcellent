@@ -56,7 +56,6 @@ $row = mysql_fetch_array($result);
 
 <!--Content-->	
             <h2>Genuine Tex-Mex Cuisine</h2>
-        </div>
      
         <!--About Section-->
     <div id="site-content">
@@ -156,6 +155,8 @@ We strive to ensure that user data is kept secure. We will only release informat
                 </div>  
             </div>
         </div> 
+
+        </div>
 
 <!-- Footer-->        
 	<?php include("includes/footer.php"); ?>  

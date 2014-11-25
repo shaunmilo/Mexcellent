@@ -57,7 +57,7 @@ h1, h2, .sectionHeading {
     clear: both;
 }
 .clearfix {
-    *zoom: 1;
+    zoom: 1;
 }
 
 /* Basic Styles */
@@ -119,8 +119,6 @@ nav a {
 }
 nav li a {
 	box-sizing:border-box;
-	-moz-box-sizing:border-box;
-	-webkit-box-sizing:border-box;
 }
 nav li:last-child a {
 	border-right: 0;
@@ -373,7 +371,7 @@ nav a#pull {
 	color:#c30;
 	border-style: solid;
     border-color: #98bf21;
-	border-size:10px;
+	border-width:4px;
 	padding-bottom:10px;
 	padding-top:10px;
 	margin-bottom:20px;
@@ -422,7 +420,6 @@ nav a#pull {
 	background-size: 100%;
 	margin: 0;
 	width: auto;
-	background-position-y: 0px;
 }
 
 #location {
@@ -829,7 +826,7 @@ footer a:link, a:active, a:visited {
 	color:#c30;
 	border-style: solid;
     border-color: #98bf21;
-	border-size:10px;
+	border-width:4px;
 	padding-bottom:10px;
 	padding-top:10px;
 	margin-bottom:20px;
@@ -885,7 +882,7 @@ footer a:link, a:active, a:visited {
 	color:#c30;
 	border-style: solid;
     border-color: #98bf21;
-	border-size:10px;
+	border-width:4px;
 	padding-bottom:10px;
 	padding-top:10px;
 	margin-bottom:20px;

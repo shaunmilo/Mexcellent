@@ -96,7 +96,6 @@ require("includes/config.php");
     
 <!-- Footer-->        
   <?php include("includes/footer.php"); ?>    
-  
-    </div>
+
 </body>
 </html>

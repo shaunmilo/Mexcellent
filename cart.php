@@ -73,7 +73,6 @@ session_start();
                             <th>Edit</th>
                           </tr>
                          
-                        </div>
                         <?php
                           
                             echo "<tr>
@@ -162,11 +161,11 @@ session_start();
             	</div>
            </div>                             
 	</div>
+</div>
 
         
 <!-- Footer-->        
     <?php include("includes/footer.php"); ?> 
-     
-	</div>   
+
 </body>
 </html>
